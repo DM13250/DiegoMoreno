@@ -11,7 +11,7 @@ export class AppComponent {
   title = 'portofolio-diego';
   constructor(public translate: TranslateService, private scrollService: ScrollService){
     this.translate.addLangs(["es", "en"]);
-    this.translate.setDefaultLang("en");
+    this.translate.setDefaultLang("es");
   }
 
   slideConfig = {
