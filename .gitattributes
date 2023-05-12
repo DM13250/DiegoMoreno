@@ -1,0 +1,6 @@
+*.ts text eol=lf
+.editorconfig text eol=lf
+.gitignore text eol=lf
+*.json text eol=lf
+*.html text eol=lt
+*.css text eol=lt

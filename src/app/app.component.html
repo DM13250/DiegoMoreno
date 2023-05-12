@@ -1,0 +1,405 @@
+  <!-- MENU ENCABEZADO -->
+  <div class="contenedor-header">
+    <header>
+        <div class="logo">
+            <a href="#">Diego</a>
+        </div>
+        <nav id="nav">
+            <ul>
+                <li><a href="#sobremi" onclick="seleccionar()">{{'menu.SOBRE MI' | translate}}</a></li>
+                <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                <li><a href="#portfolio" onclick="seleccionar()">{{'menu.PROYECTOS' | translate}}</a></li>
+                <li><a href="#contacto" onclick="seleccionar()">{{'menu.CONTACTO' | translate}}</a></li>
+            </ul>
+        </nav>
+        <!--<div class="nav-responsive" onclick="mostrarOcultarMenu()">-->
+        <div class="nav-responsive">
+            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-x menu-tablet"></i>
+        </div>
+    </header>
+</div>
+<aside class="menu-tablet">
+    <nav>
+        <ul>
+            <li><a class="aFooter" href="#inicio" onclick="seleccionar()">{{"menu.INICIO" | translate}}</a></li>
+            <li><a class="aFooter" href="#sobremi" onclick="seleccionar()">{{"menu.SOBRE MI" | translate}}</a></li>
+            <li><a class="aFooter" href="#skills" onclick="seleccionar()">SKILLS</a></li>
+            <li><a class="aFooter" href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+            <li><a class="aFooter" href="#portfolio" onclick="seleccionar()">{{"menu.PROYECTOS" | translate}}</a></li>
+            <li><a class="aFooter" href="#contacto" onclick="seleccionar()">{{"menu.CONTACTO" | translate}}</a></li>
+        </ul>
+    </nav>
+  </aside>
+
+<!-- SECCION INICIO -->
+<section id="inicio" class="inicio">
+    <div class="contenido-banner">
+        <h1 class="letter">{{'inicio.Hola, soy Diego' | translate}}</h1>
+        <h2 class="animacion-titulo">Web Developer</h2>
+    </div>
+    <div class="d-flex justify-content-center">
+        <div class="cat d-flex justify-content-center">
+            <div class="ear ear--left"></div>
+            <div class="ear ear--right"></div>
+            <div class="face">
+                <div class="eye eye--left">
+                    <div class="eye-pupil"></div>
+                </div>
+                <div class="eye eye--right">
+                    <div class="eye-pupil"></div>
+                </div>
+                <div class="muzzle"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECCION SOBRE MI -->
+<section id="sobremi" class="sobremi">
+    <div class="contenido-seccion">
+        <h2>{{'sobre-mi.Sobre Mi' | translate}}</h2>
+        <p><span>{{'sobre-mi.Infor' | translate}}</span>{{'sobre-mi.Informacion' | translate}}</p>
+
+        <div class="fila">
+            <!-- datos personales -->
+            <div class="col">
+                <h3>{{'sobre-mi.Datos Personales' | translate}}</h3>
+                <ul>
+                    <li>
+                        <strong>{{'sobre-mi.Cumpleaños' | translate}}</strong>
+                        <span>15/07/1999</span>
+                    </li>
+                    <li>
+                        <strong>{{'sobre-mi.Teléfono' | translate}}</strong>
+                        <span>+34 662944881</span>
+              
+                    </li>
+                    <li>
+                        <strong>Email</strong>
+                        <span>dieguitocule@gmail.com</span>
+                    </li>
+                    <li>
+                        <strong>Website</strong>
+                        <span></span>
+                    </li>
+                    <li>
+                        <strong>{{'sobre-mi.Dirección' | translate}}</strong>
+                        <span>Daimiel (C. Real) España</span>
+                    </li>
+                    <li>
+                        <strong>{{'sobre-mi.Cargo' | translate}}</strong>
+                        <span>Backend Developer</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- intereses -->
+            <div class="col">
+                <h3>{{"intereses.Intereses" | translate}}</h3>
+                <div class="contenedor-intereses">
+                    <div class="interes">
+                        <i class="fa-solid fa-gamepad"></i>
+                        <span>{{"intereses.VIDEOJUEGOS" | translate}}</span>
+                    </div>
+                    <div class="interes">
+                        <i class="fa-solid fa-headphones"></i>
+                        <span>{{"intereses.MUSICA" | translate}}</span>
+                    </div>
+                    <div class="interes">
+                        <i class="fa-solid fa-plane"></i>
+                        <span>{{"intereses.VIAJAR" | translate}}</span>
+                    </div>
+                    <div class="interes">
+                        <i class="fas fa-basketball-ball"></i>
+                        <span>{{"intereses.DEPORTE" | translate}}</span>
+                    </div>
+                    <div class="interes">
+                        <i class="fa-solid fa-book"></i>
+                        <span>{{"intereses.POESIA" | translate}}</span>
+                    </div>
+                    <div class="interes">
+                        <i class="fa-solid fa-car-side"></i>
+                        <span>{{"intereses.COCHES" | translate}}</span>
+                    </div>
+                    <div class="interes">
+                        <i class="fa-solid fa-camera"></i>
+                        <span>{{"intereses.FOTOS" | translate}}</span>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class=" descargar-cv d-flex justify-content-center">
+            <a href="{{'sobre-mi.CV' | translate}}" download="Prueba">
+                {{'sobre-mi.Descargar CV' | translate}} <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- SECCION SKILLS -->
+<section class="skills" id="skills">
+    <div class="contenido-seccion">
+        <h2>Skills</h2>
+        <div class="fila">
+            <!-- Technical Skill -->
+            <div class="col">
+                <h3>{{'skills.Technical' | translate}}</h3>
+                <div class="skill">
+                    <span>Javascript</span>
+                    <div class="barra-skill">
+                        <div class="progreso">
+                            <span>{{'skills.Alto' | translate}}</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>HTML & CSS</span>
+                    <div class="barra-skill">
+                        <div class="progreso">
+                            <span>{{'skills.Alto' | translate}}</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Drupal 7,8,9</span>
+                    <div class="barra-skill">
+                        <div class="progreso">
+                            <span>{{'skills.Alto' | translate}}</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Wordpress</span>
+                    <div class="barra-skill">
+                        <div class="progreso">
+                            <span>{{'skills.Medio' | translate}}</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Angular</span>
+                    <div class="barra-skill">
+                        <div class="progreso">
+                            <span>{{'skills.Medio' | translate}}</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>C#</span>
+                    <div class="barra-skill">
+                        <div class="progreso">
+                            <span>{{'skills.Medio' | translate}}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Professional Skills -->
+            <div class="col">
+                <h3>{{'skills.Professional' | translate}}</h3>
+                <div class="skill">
+                    <span>{{'skills.Comunicacion' | translate}}</span>
+                    <div class="barra-skill">
+                        <div class="progreso">
+                            <span>{{'skills.Alto' | translate}}</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>{{'skills.Equipo' | translate}}</span>
+                    <div class="barra-skill">
+                        <div class="progreso">
+                            <span>{{'skills.Alto' | translate}}</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>{{'skills.Creatividad' | translate}}</span>
+                    <div class="barra-skill">
+                        <div class="progreso">
+                            <span>{{'skills.Alto' | translate}}</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>{{'skills.Dedicacion' | translate}}</span>
+                    <div class="barra-skill">
+                        <div class="progreso">
+                            <span>{{'skills.Alto' | translate}}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECCION CURRICULUM -->
+<section id="curriculum" class="curriculum">
+    <div class="contenido-seccion">
+        <h2>Curriculum</h2>
+        <div class="fila">
+            <div class="col izquierda">
+                <h3>{{'educacion.Educación' | translate}}</h3>
+                <div class="item izq">
+                    <h4>DAW</h4>
+                    <span class="casa">IES Maestre de Calatrava (C.Real)</span>
+                    <span class="fecha">2017 - 2019</span>
+                    <p>{{'educacion.DAW' | translate}}</p>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+                <div class="item izq">
+                    <h4>{{'educacion.Bachillerato' | translate}} (LOMCE)</h4>
+                    <span class="casa">IES Ojos del Guadiana (Daimiel)</span>
+                    <span class="fecha">2015 - 2017</span>
+                    <p>{{'educacion.LOMCE' | translate}}</p>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+                <div class="item izq">
+                    <h4>{{"educacion.Certificaciones" | translate}}</h4>
+                    <p>Symfony en Escuela IT 2023.</p>
+                    <p>{{"educacion.Google" | translate}}</p>
+                    <p>Angular 10 en Imagina Formación 2020.</p>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col derecha">
+                <h3>{{"experiencia.Experiencia" | translate}}</h3>
+                <div class="item der">
+                    <h4>Backend Developer</h4>
+                    <span class="casa">Globalcaja</span>
+                    <span class="fecha">2021 - Today</span>
+                    <p>{{"experiencia.Globalcaja" | translate}}</p>
+                    <div class="conectord">
+                        <div class="circulod"></div>
+                    </div>
+                </div>
+                <div class="item der">
+                    <h4>{{"experiencia.PuestoD" | translate}}</h4>
+                    <span class="casa">Deltanet S.I.</span>
+                    <span class="fecha">2019 - 2021</span>
+                    <p>{{"experiencia.Drupal" | translate}}</p>
+                    <div class="conectord">
+                        <div class="circulod"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECCION PROYECTOS ANTIGUAMENTE LLAMADA PORTFOLIO -->
+<section id="portfolio" class="portfolio">
+    <div class="contenido-seccion">
+        <h2>{{'menu.PROYECTOS' | translate}}</h2>
+        <h3 class="text-center">Drupal</h3>
+
+        <div class="galeria">
+            <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
+                <div ngxSlickItem *ngFor="let slide of slidesDrupal">
+                  <div class="slide proyecto">
+                    <a href="{{slide.href}}" tabindex="-1" aria-hidden="true">
+                        <img [src]="slide.img" alt="{{slide.title}}">
+                        <div class="overlay">
+                            <h4>{{slide.title}}</h4>
+                        </div>
+                    </a>
+                  </div>
+                </div>
+            </ngx-slick-carousel>
+         </div>
+        <h3 class="text-center">Wordpress</h3>
+        <div class="galeria">
+            <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
+                <div ngxSlickItem *ngFor="let slide of slidesWordpress">
+                  <div class="slide proyecto">
+                    <a href="{{slide.href}}" tabindex="-1" aria-hidden="true">
+                        <img [src]="slide.img" alt="{{slide.title}}">
+                        <div class="overlay">
+                            <h4>{{slide.title}}</h4>
+                        </div>
+                    </a>
+                  </div>
+                </div>
+            </ngx-slick-carousel>
+        </div>
+        <h3 class="text-center">C# + Angular</h3>
+        <div class="galeria">
+            <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
+                <div ngxSlickItem *ngFor="let slide of slidesAngular">
+                  <div class="slide proyecto">
+                    <a href="{{slide.href}}" tabindex="-1" aria-hidden="true">
+                        <img [src]="slide.img" alt="{{slide.title}}">
+                        <div class="overlay">
+                            <h4>{{slide.title}}</h4>
+                        </div>
+                    </a>
+                  </div>
+                </div>
+            </ngx-slick-carousel>
+         </div>
+    </div>
+</section>
+
+<!-- SECCION CONTACTO -->
+<section id="contacto" class="contacto">
+    <div class="contenido-seccion">
+        <h2>{{'menu.CONTACTO' | translate}}</h2>
+        <div class="fila row justify-content-center">
+            <!-- Formulario -->
+            <div id="formulario" class="form-wrapper col d-flex flex-column col-auto">
+<form  id="contactoForm" target="_blank" action="https://formsubmit.co/05b883a307378ba3be96d647df752808" method="POST">
+  <div class="input-group">
+      <input type="text" name="name" required>
+      <label for="">{{"contacto.Nombre" | translate}} *</label>
+  </div>
+  <div class="input-group">
+      <input type="email" name="email" required>
+      <label for="">{{"contacto.Email" | translate}} *</label>
+  </div> 
+  <div class="input-group">
+      <input type="text" name="asunto" required>
+      <label for="">{{"contacto.Asunto" | translate}} *</label>
+  </div>
+  <div name="mensaje" class="textarea">
+    <textarea [placeholder]="'contacto.Mensaje' | translate" name="message" cols="20" rows="3" required></textarea>
+  </div>
+      <button type="submit" class="btn btn-lg btn-dark btn-block">{{"contacto.Enviar" | translate}}<span _ngcontent-jcb-c2="" class="overlay"></span></button>
+      <input type="hidden" name="_subject" value="¡Nuevo envío!">
+      <input type="hidden" name="_next" value="http://localhost:4200/">
+      <input type="hidden" name="_captcha" value="false">
+</form>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- footer-->
+<footer>
+    <div class="pt-5">
+        <h2>{{'footer.FIN' | translate}}</h2>
+        <p>{{'footer.muchas-gracias' | translate}}</p>
+    </div>
+    <div class="redes">
+        <a data-rel='external' href="mailto:dieguitocule@gmail.com" target="_blank"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>
+        <a data-rel='external' href="https://www.linkedin.com/in/el-diego" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a data-rel='external' href="tel:+34 66944881" target="_blank"><i class="fa-solid fa-mobile-screenfa-solid fa-mobile-screen" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa-solid fa-rss"></i></a>
+    </div>
+    <div>
+        <span class="copyright">Copyright © 2023 Diego Moreno Rodríguez-Barbero</span>
+    </div>
+</footer>
+
+<div class="floating-button-div">
+    <a _ngcontent-wcr-c2="" href="#inicio" class="arriba"><i _ngcontent-wcr-c2="" class="fa-solid fa-angles-up"></i></a>
+  </div>
