@@ -4,14 +4,14 @@
         "SOBRE MI": "SOBRE MI",
         "CURRICULUM": "CURRICULUM",
         "PROYECTOS": "PROYECTOS",
-        "CONTACTOS": "CONTACTOS"
+        "CONTACTO": "CONTACTOS"
     },
     "inicio":{
         "Hola, soy Diego":"Hola, soy Diego" 
     },
     "sobre-mi":{
         "Sobre Mi": "Sobre Mi",
-        "Infor": "Hola, soy Diego Moreno",
+        "Infor": "Hola, soy Diego Moreno. ",
         "Informacion": "Actualmente ejerzo la función de Backend Developer en Globalcaja (Ext Deltanet SI) Soy una persona proactiva, me atraen los nuevos retos. A la hora de hablar en público no tengo problema. Me considero una persona con empatía, inquieto, sonrisa telefónica y un gran entusiasmo en superarme día a día. Soy un chico competitivo, como antiguo jugador de baloncesto me encanta trabajar en equipo para poder conseguir los objetivos, aprender cada día algo diferente me hace sentir realizado. Manejo amplio en ofimática (Word, Excel, PowerPoint, Microsoft Office, zoom, teams, jira), también varios lenguajes de programación (php, jquery, java, C#, angular), los frameworks Drupal, WordPress y los lenguaje de marcas HTML5, CSS, Bootstrap. Disponibilidad para viajar, crecer personal y laboralmente. Idioma: Inglés B1 y Francés A1.",
         "Datos Personales": "Datos Personales",
         "Cumpleaños": "Cumpleaños",
@@ -59,6 +59,7 @@
         "Drupal": "Mi trabajo se desempeñaba tanto Fronted como Backend desarrollar bloques, trabajar el Api Rest, crear los .twig y realizar el diseño con bootstrap, css, html... Y obtener jsons"
     },
     "contacto":{
+        "Contacto": "Contacto",
         "Nombre": "Nombre",
         "Email": "Email",
         "Asunto": "Asunto",

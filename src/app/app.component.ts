@@ -27,12 +27,14 @@ export class AppComponent {
         "breakpoint": 770,
         "settings": {
           "slidesToShow": 2,
+          "arrows": false,
         }
       },
       {
         "breakpoint": 650,
           "settings": {
             "slidesToShow": 1,
+            "arrows": false,
           }
       }
     ]

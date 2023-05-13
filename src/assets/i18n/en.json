@@ -11,7 +11,7 @@
     },
     "sobre-mi":{
         "Sobre Mi": "About Me",
-        "Infor": "Hello, I'm Diego Moreno.",
+        "Infor": "Hello, I'm Diego Moreno. ",
         "Informacion": "Currently, I work as a Backend Developer at Globalcaja (Ext Deltanet SI). I'm a proactive person who enjoys taking on new challenges. When it comes to public speaking, I have no problem. I consider myself an empathetic person, curious, with a phone smile, and a great enthusiasm for improving myself every day. As a former basketball player, I'm competitive and love working as a team to achieve goals. Learning something new every day makes me feel fulfilled. I have extensive knowledge in office software (Word, Excel, PowerPoint, Microsoft Office, zoom, teams, jira), several programming languages (php, jquery, java, C#, angular), Drupal and WordPress frameworks, and markup languages HTML5, CSS, Bootstrap. I'm available to travel and to grow personally and professionally. Language: English B1 and French A1.",
         "Datos Personales": "Personal Information",
         "Cumpleaños": "Birthday",
@@ -59,6 +59,7 @@
         "Drupal": "My work involved both Frontend and Backend development, creating blocks, working with the Rest API, creating .twig templates, and designing with bootstrap, CSS, HTML... And obtaining JSON data."
     },
     "contacto":{
+        "Contacto": "Contact",
         "Nombre": "Name",
         "Email": "Email",
         "Asunto": "Subject",
