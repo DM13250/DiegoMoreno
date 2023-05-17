@@ -190,7 +190,7 @@ html{
     height: 100px;
     background-color: #252A2E;
     border-radius: 10px;
-    margin: 0 15px 15px 0;
+    margin: 3px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -278,24 +278,6 @@ html{
     font-size: 14px;
 }
 /* Estas clases se agregaran dinamicamente mediante javascript */
-.skills .skill .javascript{
-    width: 0%;
-    animation: 2s javascript forwards;
-}
-@keyframes javascript {
-    0%{width: 0%;}
-    100%{width: 75%;}
-}
-
-.skills .skill .htmlcss{
-    width: 0%;
-    animation: 2s htmlcss forwards;
-}
-@keyframes htmlcss {
-    0%{width: 0%;}
-    100%{width: 90%;}
-}
-
 .skills .skill .drupal{
     width: 0%;
     animation: 2s drupal forwards;
@@ -304,16 +286,6 @@ html{
     0%{width: 0%;}
     100%{width: 74%;}
 }
-
-.skills .skill .wordpress{
-    width: 0%;
-    animation: 2s wordpress forwards;
-}
-@keyframes wordpress {
-    0%{width: 0%;}
-    100%{width: 65%;}
-}
-
 .skills .skill .angular{
     width: 0%;
     animation: 2s angular forwards;
@@ -329,6 +301,38 @@ html{
 @keyframes C {
     0%{width: 0%;}
     100%{width: 60%;}
+}
+.skills .skill .wordpress{
+    width: 0%;
+    animation: 2s wordpress forwards;
+}
+@keyframes wordpress {
+    0%{width: 0%;}
+    100%{width: 65%;}
+}
+.skills .skill .javascript{
+    width: 0%;
+    animation: 2s javascript forwards;
+}
+@keyframes javascript {
+    0%{width: 0%;}
+    100%{width: 75%;}
+}
+.skills .skill .bootstrap{
+    width: 0%;
+    animation: 2s bootstrap forwards;
+}
+@keyframes bootstrap {
+    0%{width: 0%;}
+    100%{width: 90%;}
+}
+.skills .skill .htmlcss{
+    width: 0%;
+    animation: 2s htmlcss forwards;
+}
+@keyframes htmlcss {
+    0%{width: 0%;}
+    100%{width: 90%;}
 }
 
 .skills .skill .comunicacion{

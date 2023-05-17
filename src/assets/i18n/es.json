@@ -54,7 +54,7 @@
     },
     "experiencia":{
         "Experiencia": "Experiencia de trabajo",
-        "Globalcaja": "Mis fuciones son realizacion de servicios de extraccion de datos a través de consutas fuciones para sacar los jsos y allí la gente de front puean pintar esos datos que están pidiendo el liente. Otras funciones que he tenido que realizar son: Soporte Remoto, realizar de migraciones, realizar reports",
+        "Globalcaja": "Mis fuciones son realizacion de servicios de extraccion de datos a través de consutas fuciones para sacar los jsos y para que el equipo de front pueda trabajar con los datos proporcionados de los servicios. Otras funciones que he tenido que realizar son: Soporte Remoto, realizar de migraciones, realizar reports",
         "PuestoD": "Desarrollador de Drupal",
         "Drupal": "Mi trabajo se desempeñaba tanto Fronted como Backend desarrollar bloques, trabajar el Api Rest, crear los .twig y realizar el diseño con bootstrap, css, html... Y obtener jsons"
     },
