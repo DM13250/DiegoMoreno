@@ -16,24 +16,28 @@ html{
 .redes a{
     color: #fff;
     display: inline-block;
-    text-decoration: none;
-    border: 1px solid #fff;
     border-radius: 100%;
     width: 42px;
-    height: 42px;
-    line-height: 42px;
     margin: 40px 10px;
     font-size: 20px;
     transition: .3s;
 }
+
+.redes a i{
+    line-height: 42px;
+    font-size: 23px;
+}
+
 .redes a:hover{
-    background-color: #FFC626;
+    background-color: #FFD700;
 }
 
 
 /* MENU */
 .contenedor-header{
-    background: #1e2326;
+    background: linear-gradient(90deg, #ee7752, #e73c7e, #6f067a);
+	background-size: 400% 400%;
+	animation: anim 15s ease infinite;
     position: fixed;
     width: 100%;
     top: 0;
@@ -51,12 +55,13 @@ html{
 .contenedor-header header .logo a{
     font-family: 'Righteous';
     font-size: 36px;
-    color: #FFC626;
+    color: #FFD700;
     text-decoration: none;
 }
 .contenedor-header header ul{
     display: flex;
     list-style: none;
+    margin:0;
 }
 .contenedor-header header nav ul li a{
     text-align: none;
@@ -67,7 +72,7 @@ html{
     text-decoration: none;
 }
 .contenedor-header header nav ul li a:hover{
-    color: #FFC626;
+    color: #FFD700;
 }
 .nav-responsive{
     color:#fff;
@@ -107,7 +112,7 @@ html{
 
 .inicio .contenido-banner img{
     margin-top: 40px;
-    border: 10px solid #FFC626;
+    border: 10px solid #FFD700;
     display: block;
     width: 80%;
     margin: auto;
@@ -123,7 +128,7 @@ html{
 .letter:hover, .animacion-titulo:hover {
     transform: scale(1.2);
     transition: 1s;
-    color:#FFC626;
+    color:#FFD700;
 }
 
 
@@ -155,15 +160,18 @@ html{
     margin-bottom: 20px;
 }
 .sobremi .contenido-seccion p span{
-    color: #FFC626;
+    color: #FFD700;
     font-weight: bold;
 }
 .sobremi .fila{
     display: flex;
+    justify-content: space-between; /* Separa los hijos al máximo posible */
+    align-items: center;
 }
 .sobremi .fila .col
 {
-    width: 50%;
+    flex: 1; /* Hace que las columnas ocupen el mismo espacio */
+    padding: 10px; /* Añade espacio alrededor de las columnas */
 }
 .sobremi .fila .col h3, .portfolio h3{
     font-size: 28px;
@@ -172,34 +180,15 @@ html{
 }
 .sobremi .fila .col ul{
     list-style: none;
+    padding-left: 0px;
 }
 .sobremi .fila .col ul li{
     margin: 12px 0;
 }
 .sobremi .fila .col ul li strong{
     display: inline-block;
-    color: #FFC626;
+    color: #FFD700;
     width: 130px;
-}
-.sobremi .fila .col .contenedor-intereses{
-    display: flex;
-    flex-wrap: wrap;
-}
-.sobremi .fila .col .contenedor-intereses .interes{
-    width: 100px;
-    height: 100px;
-    background-color: #252A2E;
-    border-radius: 10px;
-    margin: 3px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: .3s;
-}
-.sobremi .fila .col .contenedor-intereses .interes i{
-    font-size: 30px;
-    margin-bottom: 10px;
 }
 .sobremi .descargar-cv a{
     cursor: pointer;
@@ -259,7 +248,7 @@ html{
     margin-bottom: 30px;
 }
 .skills .skill .progreso{
-    background-color: #FFC626;
+    background-color: #FFD700;
     position: absolute;
     top: 0;
     left: 0;
@@ -269,7 +258,7 @@ html{
     position: absolute;
     height: 40px;
     width: 40px;
-    background-color: #FFC626;
+    background-color: #FFD700;
     border-radius: 50px;
     line-height: 40px;
     text-align: center;
@@ -418,30 +407,30 @@ html{
     margin-bottom: 10px;
 }
 .curriculum .fila .item .casa{
-    color: #FFC626;
+    color: #FFD700;
     font-size: 22px;
     font-weight: bold;
     display: block;
 }
 .curriculum .fila .item .fecha{
     display: block;
-    color: #FFC626;
+    color: #FFD700;
     margin-bottom: 10px;
 }
 .curriculum .fila .item p{
     line-height: 24px;
 }
 .curriculum .fila .izq{
-    border-right: 2px solid #FFC626;
+    border-right: 2px solid #FFD700;
     margin-right: 20px;
 }
 .curriculum .fila .der{
-    border-left: 2px solid #FFC626;
+    border-left: 2px solid #FFD700;
     margin-left: 20px;
 }
 .curriculum .fila .item .conectori{
     height: 2px;
-    background-color: #FFC626;
+    background-color: #FFD700;
     width: 47px;
     position: absolute;
     top: 50%;
@@ -453,14 +442,14 @@ html{
     height: 10px;
     width: 10px;
     border-radius: 50%;
-    background-color: #FFC626;
+    background-color: #FFD700;
     float: right;
     position: relative;
     bottom: 4px;
 }
 .curriculum .fila .item .conectord{
     height: 2px;
-    background-color: #FFC626;
+    background-color: #FFD700;
     width: 47px;
     position: absolute;
     top: 50%;
@@ -472,7 +461,7 @@ html{
     height: 10px;
     width: 10px;
     border-radius: 50%;
-    background-color: #FFC626;
+    background-color: #FFD700;
     float: left;
     position: relative;
     bottom: 4px;
@@ -515,7 +504,7 @@ html{
     width: 100%;
     height: 100%;
     text-align: center;
-    background: linear-gradient(#FFC626, #FFC626);
+    background: linear-gradient(#FFD700, #FFD700);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -582,7 +571,7 @@ html{
     left: 0;
     width: 0;
     height: 100%;
-    background-color: #FFC626;
+    background-color: #FFD700;
     z-index: -1;
     transition: 1s;
 }
@@ -646,23 +635,6 @@ html{
     z-index: 10;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 footer{
     background-color: #252A2E;
     color: #fff;
@@ -675,7 +647,7 @@ footer{
     display: block;
     width: 50px;
     height: 50px;
-    background-color: #FFC626;
+    background-color: #FFD700;
     color: #fff;
     position: absolute;
     left: 50%;
@@ -685,8 +657,13 @@ footer{
     line-height: 50px;
     font-size: 18px;
 }
+
+.git{
+    width: 100%;
+}
+
 .copyright{
-    font-size: 10px;
+    font-size: 80%;
 }
 /* SECCION RESPONSIVE */
 @media screen and (max-width:980px){
@@ -759,14 +736,25 @@ footer{
 }
 
 aside{
-    background: linear-gradient(200deg, #252A2E, #A48630, #FFC626);
-	transition: all .5s ease;
+    background: linear-gradient(90deg, #ee7752, #e73c7e, #6f067a);
+	animation: anim 15s ease infinite;
 	z-index: 50;
     position: fixed;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;    
+    background-size: 400% 400%;
+    /*
+        background: linear-gradient(90deg, #ee7752, #e73c7e, #6f067a);
+	background-size: 400% 400%;
+	animation: anim 15s ease infinite;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    */
 }    
 .open {
         opacity: 1;
@@ -826,7 +814,7 @@ aside nav ul li a:hover {
     left: 0;
     width: 0;
     height: 100%;
-    background-color: #FFC626;
+    background-color: #FFD700;
     z-index: -1;
     transition: 1s;
 }

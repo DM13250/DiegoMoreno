@@ -2,9 +2,9 @@
   <div class="contenedor-header">
     <header>
         <div class="logo">
-            <a href="#">Diego</a>
+            <a href="#" aria-label="Inicio">Diego</a>
         </div>
-        <nav id="nav">
+        <nav id="nav" aria-label="Menú principal">
             <ul>
                 <li><a href="#sobremi" onclick="seleccionar()">{{'menu.SOBRE MI' | translate}}</a></li>
                 <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
@@ -16,7 +16,7 @@
         <!--<div class="nav-responsive" onclick="mostrarOcultarMenu()">-->
         <div class="nav-responsive">
             <i class="fa-solid fa-bars"></i>
-            <i class="fa-solid fa-x menu-tablet"></i>
+            <i class="fa-solid fa-x menu-tablet" aria-label="Abrir menú"></i>
         </div>
     </header>
 </div>
@@ -31,16 +31,19 @@
             <li><a class="aFooter" href="#contacto" onclick="seleccionar()">{{"menu.CONTACTO" | translate}}</a></li>
         </ul>
     </nav>
-  </aside>
+</aside>
 
-<!-- SECCION INICIO -->
 <section id="inicio" class="inicio">
     <div class="contenido-banner">
-        <h1 class="letter">{{'inicio.Hola, soy Diego' | translate}}</h1>
-        <h2 class="animacion-titulo">Web Developer</h2>
+        <h1 class="letter">{{ 'inicio.Hola, soy Diego' | translate }}</h1>
+        <div>
+            <span class="animacion-titulo">Desarrollador Web</span>
+            <span> | </span>
+            <span class="animacion-titulo">Especializado en Drupal y Backend Developer</span>
+        </div>
     </div>
-    <div class="d-flex justify-content-center">
-        <div class="cat d-flex justify-content-center">
+    <div class="d-flex justify-content-center mt-5">
+        <div class="cat">
             <div class="ear ear--left"></div>
             <div class="ear ear--right"></div>
             <div class="face">
@@ -56,15 +59,22 @@
     </div>
 </section>
 
+
 <!-- SECCION SOBRE MI -->
 <section id="sobremi" class="sobremi">
     <div class="contenido-seccion">
         <h2>{{'sobre-mi.Sobre Mi' | translate}}</h2>
-        <p><span>{{'sobre-mi.Infor' | translate}}</span>{{'sobre-mi.Informacion' | translate}}</p>
 
         <div class="fila">
-            <!-- datos personales -->
+            <!-- intereses -->
             <div class="col">
+                <p><span>{{'sobre-mi.Infor' | translate}}</span>{{'sobre-mi.Informacion' | translate}}</p>
+                <p>{{'sobre-mi.Informacion2' | translate}}</p>
+                <p>{{'sobre-mi.Informacion3' | translate}}</p>
+                <p>{{'sobre-mi.Informacion4' | translate}}</p>
+            </div> 
+            <!-- datos personales -->
+            <div class="col datos-personales">
                 <h3>{{'sobre-mi.Datos Personales' | translate}}</h3>
                 <ul>
                     <li>
@@ -78,7 +88,7 @@
                     </li>
                     <li>
                         <strong>Email</strong>
-                        <span>dieguitocule@gmail.com</span>
+                        <span>dmr13250@gmail.com</span>
                     </li>
                     <li>
                         <strong>Website</strong>
@@ -90,46 +100,11 @@
                     </li>
                     <li>
                         <strong>{{'sobre-mi.Cargo' | translate}}</strong>
-                        <span>Backend Developer</span>
+                        <span>Desempleado</span>
                     </li>
                 </ul>
             </div>
-
-            <!-- intereses -->
-            <div class="col">
-                <h3>{{"intereses.Intereses" | translate}}</h3>
-                <div class="contenedor-intereses">
-                    <div class="interes">
-                        <i class="fa-solid fa-gamepad"></i>
-                        <span>{{"intereses.VIDEOJUEGOS" | translate}}</span>
-                    </div>
-                    <div class="interes">
-                        <i class="fa-solid fa-headphones"></i>
-                        <span>{{"intereses.MUSICA" | translate}}</span>
-                    </div>
-                    <div class="interes">
-                        <i class="fa-solid fa-plane"></i>
-                        <span>{{"intereses.VIAJAR" | translate}}</span>
-                    </div>
-                    <div class="interes">
-                        <i class="fas fa-basketball-ball"></i>
-                        <span>{{"intereses.DEPORTE" | translate}}</span>
-                    </div>
-                    <div class="interes">
-                        <i class="fa-solid fa-book"></i>
-                        <span>{{"intereses.POESIA" | translate}}</span>
-                    </div>
-                    <div class="interes">
-                        <i class="fa-solid fa-car-side"></i>
-                        <span>{{"intereses.COCHES" | translate}}</span>
-                    </div>
-                    <div class="interes">
-                        <i class="fa-solid fa-camera"></i>
-                        <span>{{"intereses.FOTOS" | translate}}</span>
-                    </div>
-                    
-                </div>
-            </div>
+           
         </div>
         <div class=" descargar-cv d-flex justify-content-center">
             <a href="{{'sobre-mi.CV' | translate}}" download="CV_DiegoMoreno">
@@ -152,7 +127,7 @@
                     <span>Drupal 7,8,9</span>
                     <div class="barra-skill">
                         <div class="progreso">
-                            <span>{{'skills.Alto' | translate}}</span>
+                            <span></span>
                         </div>
                     </div>
                 </div>
@@ -160,7 +135,7 @@
                     <span>Angular</span>
                     <div class="barra-skill">
                         <div class="progreso">
-                            <span>{{'skills.Medio' | translate}}</span>
+                            <span></span>
                         </div>
                     </div>
                 </div>
@@ -168,7 +143,7 @@
                     <span>C#</span>
                     <div class="barra-skill">
                         <div class="progreso">
-                            <span>{{'skills.Medio' | translate}}</span>
+                            <span></span>
                         </div>
                     </div>
                 </div>
@@ -176,7 +151,7 @@
                     <span>Wordpress</span>
                     <div class="barra-skill">
                         <div class="progreso">
-                            <span>{{'skills.Medio' | translate}}</span>
+                            <span></span>
                         </div>
                     </div>
                 </div>
@@ -184,7 +159,7 @@
                     <span>Javascript</span>
                     <div class="barra-skill">
                         <div class="progreso">
-                            <span>{{'skills.Alto' | translate}}</span>
+                            <span></span>
                         </div>
                     </div>
                 </div>
@@ -192,7 +167,7 @@
                     <span>Bootstrap</span>
                     <div class="barra-skill">
                         <div class="progreso">
-                            <span>{{'skills.Alto' | translate}}</span>
+                            <span></span>
                         </div>
                     </div>
                 </div>
@@ -200,7 +175,7 @@
                     <span>HTML & CSS</span>
                     <div class="barra-skill">
                         <div class="progreso">
-                            <span>{{'skills.Alto' | translate}}</span>
+                            <span></span>
                         </div>
                     </div>
                 </div>
@@ -212,7 +187,7 @@
                     <span>{{'skills.Comunicacion' | translate}}</span>
                     <div class="barra-skill">
                         <div class="progreso">
-                            <span>{{'skills.Alto' | translate}}</span>
+                            <span></span>
                         </div>
                     </div>
                 </div>
@@ -220,7 +195,7 @@
                     <span>{{'skills.Equipo' | translate}}</span>
                     <div class="barra-skill">
                         <div class="progreso">
-                            <span>{{'skills.Alto' | translate}}</span>
+                            <span></span>
                         </div>
                     </div>
                 </div>
@@ -228,7 +203,7 @@
                     <span>{{'skills.Creatividad' | translate}}</span>
                     <div class="barra-skill">
                         <div class="progreso">
-                            <span>{{'skills.Alto' | translate}}</span>
+                            <span></span>
                         </div>
                     </div>
                 </div>
@@ -236,7 +211,7 @@
                     <span>{{'skills.Dedicacion' | translate}}</span>
                     <div class="barra-skill">
                         <div class="progreso">
-                            <span>{{'skills.Alto' | translate}}</span>
+                            <span></span>
                         </div>
                     </div>
                 </div>
@@ -262,7 +237,20 @@
                     </div>
                 </div>
                 <div class="item izq">
+                    <h4>Actualmente Realizando Bootcamp Full Stack Open</h4>
+                    <p>La Universidad de Helsinki es la Universidad de Ciencias más grande y antigua de Finlandia</p>
+                    <p></p>
+                    <p>¡Aprende React, Redux, Node.js, MongoDB, GraphQL y TypeScript de una sola vez!
+                         Este curso te presentará el desarrollo web Moderno basado en JavaScript. 
+                         El objetivo principal es crear aplicaciones de una sola página con ReactJS que utilicen una 
+                         API REST creada con Node.js.</p>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+                <div class="item izq">
                     <h4>{{"educacion.Certificaciones" | translate}}</h4>
+                    <p>C# desde 0: Inicia tu carrera como programador en Udemy 2024.</p>
                     <p>Symfony en Escuela IT 2023.</p>
                     <p>{{"educacion.Google" | translate}}</p>
                     <p>Angular 10 en Imagina Formación 2020.</p>
@@ -275,10 +263,39 @@
             <div class="col derecha">
                 <h3>{{"experiencia.Experiencia" | translate}}</h3>
                 <div class="item der">
+                    <h4>Drupal Developer</h4>
+                    <span class="casa">Royal Comunicación</span>
+                    <span class="fecha">11/2023 - 03/2024</span>
+                    <p>Desarrollo de nueva página Web que permite, por ejemplo, información sobre artículos, 
+                        tiendas, consultas de cupones, comprar productos
+                        - Desarrollo de servicios backend para la obtención eficiente de datos mejorando funcionalidad
+                        y accesibilidad del sistema
+                        - Creación de nuevos módulos personalizados, por ejemplo, uno dirigido a empleados de 
+                        Consum, se registran rutas y proporciona información sobre los nuevos clientes que se han 
+                        hecho
+                        - Documentación
+                        - Maquetación
+                        - Llamadas a API REST
+                        - Implementación de formularios mediante la técnica BuildForm, garantizando una experiencia 
+                        fluida para los usuarios cliente y una fácil gestión para los administradores de sistemas
+                        - Creación de nuevos tipos de contenidos, adaptados a las necesidades específicas del cliente 
+                        mejorando la flexibilidad del sistema de gestión de contenidos
+                        - Integración de temas y diseño responsivo para optimizar la experiencia del usuario
+                        - Realización de pruebas en PRE para comprobar que todo funciona después de cada subida</p>
+                    <div class="conectord">
+                        <div class="circulod"></div>
+                    </div>
+                </div>
+                <div class="item der">
                     <h4>Backend Developer</h4>
                     <span class="casa">Globalcaja</span>
-                    <span class="fecha">2021 - Today</span>
-                    <p>{{"experiencia.Globalcaja" | translate}}</p>
+                    <span class="fecha">03/2021 - 11/2023</span>
+                    <p>-	Desarrollo de servicios web para extracción de datos
+                        -	Diseño e implementación de servicios de extracción de datos altamente eficientes lo que garantiza que los datos solicitados estén disponibles en formato requerido (JSON) para su posterior visualización y utilización del equipo frontend
+                        -	Creación de informes con Jasper: empleo de JasperReports para crear, diseñar y modificar informes altamente personalizados que ofrecen información calve a nuestros clientes, procediendo después la prueba en servidor Azure donde se almacenaban y se podía ver el resultado final con datos antes de subirlo a PRE y PRO
+                        -	Soporte remoto y técnico para asegurar que nuestros sistemas y aplicaciones funcione de manera óptima y resolviendo problemas de forma inmediata para que el cliente esté satisfecho
+                        -	Gestión de migraciones, migración de datos asegurando su transición exitosa de sistemas heredados a soluciones tecnológicas modernas y más eficientes (SQL Server y MySQL)
+                        </p>
                     <div class="conectord">
                         <div class="circulod"></div>
                     </div>
@@ -286,8 +303,21 @@
                 <div class="item der">
                     <h4>{{"experiencia.PuestoD" | translate}}</h4>
                     <span class="casa">Deltanet S.I.</span>
-                    <span class="fecha">2019 - 2021</span>
-                    <p>{{"experiencia.Drupal" | translate}}</p>
+                    <span class="fecha">10/2019 - 03/2021</span>
+                    <p>-	Desarrollo en Drupal 8 de nuevo sitio web para el Ayuntamiento de Benidorm, se trata de un multisite con noticias, información de política, áreas municipales, eventos destacados, prensa, radio, TV, oficinas de rodajes, fondos europeos, etc, tanto backend como frontend para garantizar su funcionalidad y mejor experiencia del usuario
+                        -	Llamadas API REST
+                        -	Maquetación
+                        -	Desarrollo de proyecto en Drupal 7 y 8 para Ayuntamiento de Daimiel, incluyendo pequeñas modificaciones como por ejemplo e-commerce, permite consultas sobre restaurantes, monumentos o comprar entradas para eventos como teatros
+                        -	Desarrollo de proyecto en Drupal 7 y 8 para Hospitales HM, sitio web con noticias de salud, coronavirus, investigación, premios, etc
+                        -	Desarrollo de proyecto para Edificaciones Caballero, sitio donde se podía realizar la compra o venta y alquiler de edificios, se añadieron nuevos contenidos e imágenes
+                        -	Instalación y creación de módulos, formularios, bloques personalizados con la clase extendida FormBase
+                        -	Creación de hooks para añadir librerías css/js o hacer borrado
+                        -	Instalación de librerías para carrusel como slick o para cookies
+                        -	Trabajo con la parte visual (jQuery, Bootstrap, CSS y SASS) para que sea también responsive
+                        -	Nuevas características
+                        -	Optimización de sitios web
+                        -	Empleo de metodología SCRUM
+                        </p>
                     <div class="conectord">
                         <div class="circulod"></div>
                     </div>
@@ -301,13 +331,13 @@
 <section id="portfolio" class="portfolio">
     <div class="contenido-seccion">
         <h2>{{'menu.PROYECTOS' | translate}}</h2>
+        <p class="text-center">Estos son algunos de los proyectos que he realizado a lo largo de este tiempo.</p>
         <h3 class="text-center">Drupal 7, 8</h3>
-
         <div class="galeria">
             <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
                 <div ngxSlickItem *ngFor="let slide of slidesDrupal">
                   <div class="slide proyecto">
-                    <a href="{{slide.href}}" tabindex="-1" aria-hidden="true">
+                    <a href="{{slide.href}}" tabindex="-1" aria-hidden="true" target="_blank" rel="noopener noreferrer">
                         <img [src]="slide.img" alt="{{slide.title}}">
                         <div class="overlay">
                             <h4>{{slide.title}}</h4>
@@ -322,7 +352,7 @@
             <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
                 <div ngxSlickItem *ngFor="let slide of slidesWordpress">
                   <div class="slide proyecto">
-                    <a href="{{slide.href}}" tabindex="-1" aria-hidden="true">
+                    <a href="{{slide.href}}" tabindex="-1" aria-hidden="true" target="_blank" rel="noopener noreferrer">
                         <img [src]="slide.img" alt="{{slide.title}}">
                         <div class="overlay">
                             <h4>{{slide.title}}</h4>
@@ -337,7 +367,7 @@
             <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
                 <div ngxSlickItem *ngFor="let slide of slidesAngular">
                   <div class="slide proyecto">
-                    <a href="{{slide.href}}" tabindex="-1" aria-hidden="true">
+                    <a href="{{slide.href}}" tabindex="-1" aria-hidden="true" target="_blank" rel="noopener noreferrer">
                         <img [src]="slide.img" alt="{{slide.title}}">
                         <div class="overlay">
                             <h4>{{slide.title}}</h4>
@@ -351,12 +381,12 @@
 </section>
 
 <!-- SECCION CONTACTO -->
-<section id="contacto" class="contacto">
+<!--<section id="contacto" class="contacto">
     <div class="contenido-seccion">
         <h2>{{'contacto.Contacto' | translate}}</h2>
         <div class="fila row justify-content-center">
-            <!-- Formulario -->
-            <div id="formulario" class="form-wrapper col d-flex flex-column col-auto">
+            <-- Formulario -->
+            <!--<div id="formulario" class="form-wrapper col d-flex flex-column col-auto">
 <form  id="contactoForm" target="_blank" action="https://formsubmit.co/05b883a307378ba3be96d647df752808" method="POST">
   <div class="input-group">
       <input type="text" name="name" required>
@@ -384,15 +414,23 @@
 </section>
 <!-- footer-->
 <footer>
-    <div class="pt-5">
-        <h2>{{'footer.FIN' | translate}}</h2>
-        <p>{{'footer.muchas-gracias' | translate}}</p>
+    <div class="pt-5" id="contacto">
+        <h2>¿Hablamos?</h2>
+        <p>Os dejo aquí abajo mis redes sociales para que estemos en contacto.</p>
     </div>
     <div class="redes">
-        <a data-rel='external' href="mailto:dieguitocule@gmail.com" target="_blank"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>
-        <a data-rel='external' href="https://www.linkedin.com/in/el-diego" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-        <a data-rel='external' href="tel:+34 66944881" target="_blank"><i class="fa-solid fa-mobile-screenfa-solid fa-mobile-screen" aria-hidden="true"></i></a>
-        <a href="https://github.com/DM13250/DiegoMoreno"><i class="fa-solid fa-rss"></i></a>
+        <a href="mailto:dmr13250@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Enviar correo a Diego Moreno Rodríguez-Barbero">
+            <i aria-hidden="true" class="fa-solid fa-envelope"></i>
+        </a>
+        <a data-rel='external' href="https://www.linkedin.com/in/el-diego" target="_blank" rel="noopener noreferrer" aria-label="Linkedin de Diego Moreno Rodríguez-Barbero">
+            <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a data-rel='external' href="tel:+34 662944881" target="_blank" rel="noopener noreferrer" aria-label="Número de móvil de Diego Moreno Rodríguez-Barbero">
+            <i class="fa-solid fa-mobile-screenfa-solid fa-mobile-screen" aria-hidden="true"></i>
+        </a>
+        <a href="https://github.com/DM13250/DiegoMoreno" target="_blank" rel="noopener noreferrer" aria-label="Github de Diego Moreno Rodríguez-Barbero">
+            <img class="git" src="../assets/logos/githubLogo.png" alt="GithubLogotipo"  style="filter: invert(100%);">
+        </a>
     </div>
     <div>
         <span class="copyright">Copyright © 2023 Diego Moreno Rodríguez-Barbero</span>
@@ -400,5 +438,7 @@
 </footer>
 
 <div class="floating-button-div">
-    <a _ngcontent-wcr-c2="" href="#inicio" class="arriba"><i _ngcontent-wcr-c2="" class="fa-solid fa-angles-up"></i></a>
+    <a _ngcontent-wcr-c2="" href="#inicio" class="arriba" aria-label="Flecha que sube hasta el inicio de la web">
+        <i _ngcontent-wcr-c2="" class="fa-solid fa-angles-up"></i>
+    </a>
   </div>
