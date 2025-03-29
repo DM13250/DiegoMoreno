@@ -1,0 +1,81 @@
+{
+  "header": {
+    "inicio": "Home",
+    "sobremi": "About Me",
+    "skills": "Skills",
+    "proyectos": "Projects",
+    "contacto": "Contact"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About Me",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hello! I'm",
+    "title": "Diego Moreno",
+    "subtitle": "Frontend Developer",
+    "description": "Creating elegant and functional digital experiences",
+    "cta": "View Projects"
+  },
+  "about": {
+    "title": "About Me",
+    "description": "Learn more about me, my experience, and my passion for web development.",
+    "parrafo1": "I am a web developer with over 5 years of experience in developing web applications and sites using technologies such as Drupal, Angular, React, and .NET.",
+    "parrafo2": "My approach is to create digital solutions that not only meet technical requirements but also provide an excellent user experience. I specialize in both frontend and backend development, with a strong emphasis on creating clean and functional interfaces.",
+    "parrafo3": "Throughout my career, I have worked with various companies and organizations, from startups to large corporations, helping them bring their ideas to life and improve their digital presence.",
+    "datosPersonales": "Personal Information",
+    "cumpleanos": "Birthday",
+    "telefono": "Phone",
+    "direccion": "Location",
+    "cargo": "Current Position",
+    "descargarCV": "Download CV"
+  },
+  "skills": {
+    "title": "Skills",
+    "tecnicas": "Technical Skills",
+    "profesionales": "Professional Skills",
+    "comunicacion": "Communication",
+    "equipo": "Teamwork",
+    "creatividad": "Creativity",
+    "dedicacion": "Dedication"
+  },
+  "projects": {
+    "title": "Projects",
+    "description": "These are some of the most notable projects I've worked on. Each represents different challenges and technical solutions I've implemented.",
+    "viewProject": "View Project",
+    "viewCode": "View Code",
+    "all": "All",
+    "drupal": "Drupal",
+    "react": "React",
+    "dotnet": ".NET"
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "Interested in working together or want to know more about my projects? Send me a message and I'll get back to you as soon as possible.",
+    "name": "Name",
+    "email": "Email",
+    "subject": "Subject",
+    "message": "Message",
+    "send": "Send Message",
+    "success": "Message sent successfully!",
+    "errorName": "Name is required",
+    "errorEmail": "Enter a valid email",
+    "errorMessage": "Message is required"
+  },
+  "theme": {
+    "light": "Light Mode",
+    "dark": "Dark Mode"
+  },
+  "accessibility": {
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "footer": {
+    "contacto": "Contact",
+    "derechos": "All rights reserved",
+    "hecho": "Made with"
+  }
+} 
