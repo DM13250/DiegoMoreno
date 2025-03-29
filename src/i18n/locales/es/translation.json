@@ -1,0 +1,81 @@
+{
+  "header": {
+    "inicio": "Inicio",
+    "sobremi": "Sobre Mí",
+    "skills": "Habilidades",
+    "proyectos": "Proyectos",
+    "contacto": "Contacto"
+  },
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre Mí",
+    "skills": "Habilidades",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "greeting": "¡Hola! Soy",
+    "title": "Diego Moreno",
+    "subtitle": "Desarrollador Frontend",
+    "description": "Creando experiencias digitales elegantes y funcionales",
+    "cta": "Ver Proyectos"
+  },
+  "about": {
+    "title": "Sobre Mí",
+    "description": "Conoce un poco más sobre mí, mi experiencia y mi pasión por el desarrollo web.",
+    "parrafo1": "Soy un desarrollador web con más de 5 años de experiencia en el desarrollo de aplicaciones web y sitios usando tecnologías como Drupal, Angular, React y .NET.",
+    "parrafo2": "Mi enfoque está en crear soluciones digitales que no solo cumplan con los requisitos técnicos, sino que también ofrezcan una excelente experiencia de usuario. Me especializo en el desarrollo frontend y backend, con un fuerte énfasis en la creación de interfaces limpias y funcionales.",
+    "parrafo3": "A lo largo de mi carrera, he trabajado con diversas empresas y organizaciones, desde startups hasta grandes corporaciones, ayudándoles a materializar sus ideas y mejorar su presencia digital.",
+    "datosPersonales": "Datos Personales",
+    "cumpleanos": "Cumpleaños",
+    "telefono": "Teléfono",
+    "direccion": "Dirección",
+    "cargo": "Puesto Actual",
+    "descargarCV": "Descargar CV"
+  },
+  "skills": {
+    "title": "Habilidades",
+    "tecnicas": "Habilidades Técnicas",
+    "profesionales": "Habilidades Profesionales",
+    "comunicacion": "Comunicación",
+    "equipo": "Trabajo en Equipo",
+    "creatividad": "Creatividad",
+    "dedicacion": "Dedicación"
+  },
+  "projects": {
+    "title": "Proyectos",
+    "description": "Estos son algunos de los proyectos más destacados en los que he trabajado. Cada uno representa diferentes desafíos y soluciones técnicas implementadas.",
+    "viewProject": "Ver Proyecto",
+    "viewCode": "Ver Código",
+    "all": "Todos",
+    "drupal": "Drupal",
+    "react": "React",
+    "dotnet": ".NET"
+  },
+  "contact": {
+    "title": "Contacto",
+    "description": "¿Interesado en trabajar juntos o quieres saber más sobre mis proyectos? Envíame un mensaje y me pondré en contacto contigo lo antes posible.",
+    "name": "Nombre",
+    "email": "Email",
+    "subject": "Asunto",
+    "message": "Mensaje",
+    "send": "Enviar Mensaje",
+    "success": "¡Mensaje enviado con éxito!",
+    "errorName": "El nombre es obligatorio",
+    "errorEmail": "Introduce un email válido",
+    "errorMessage": "El mensaje es obligatorio"
+  },
+  "theme": {
+    "light": "Modo Claro",
+    "dark": "Modo Oscuro"
+  },
+  "accessibility": {
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú"
+  },
+  "footer": {
+    "contacto": "Contacto",
+    "derechos": "Todos los derechos reservados",
+    "hecho": "Hecho con"
+  }
+} 
