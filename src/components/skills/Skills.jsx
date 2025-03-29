@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import './Skills.css';
-import { useTranslation } from 'react-i18next';
 
 // Importar las imágenes
 import drupalIcon from '../../assets/img/technologies/drupal.png';
@@ -22,7 +21,6 @@ import gitIcon from '../../assets/img/technologies/git.png';
 import javaScriptIcon from '../../assets/img/technologies/javascript.png';
 
 const Skills = () => {
-  const { t } = useTranslation();
   const carouselRef = useRef(null);
   
   const skillsData = [

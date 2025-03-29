@@ -6,7 +6,6 @@ import {
   faUser, 
   faCode, 
   faBriefcase, 
-  faEnvelope, 
   faSun, 
   faMoon, 
   faCircle 
@@ -16,7 +15,7 @@ import navigationConfig from '../../config/navigationConfig';
 import './Header.css';
 
 const Header = ({ activeSection, isSidebarOpen, toggleSidebar }) => {
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
   const [isDarkTheme, setIsDarkTheme] = useState(() => {
     const savedTheme = localStorage.getItem('preferredTheme');
     if (savedTheme) {
@@ -30,7 +29,7 @@ const Header = ({ activeSection, isSidebarOpen, toggleSidebar }) => {
   useEffect(() => {
     document.documentElement.classList.toggle('dark-theme', isDarkTheme);
     document.body.classList.toggle('dark-theme', isDarkTheme);
-  }, []);
+  }, [isDarkTheme]);
 
   // Controlar scroll
   useEffect(() => {
