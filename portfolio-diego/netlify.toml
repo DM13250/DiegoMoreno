@@ -1,3 +1,11 @@
+# netlify.toml - Configuración de despliegue en Netlify
+#
+# Este archivo contiene la configuración para el despliegue
+# de la aplicación en Netlify, incluyendo:
+# - Comandos de construcción
+# - Directorio de publicación
+# - Configuración de redirecciones
+
 [build]
   command = "npm run build"
   publish = "build"

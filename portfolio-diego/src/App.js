@@ -1,3 +1,11 @@
+/**
+ * App.js - Componente principal de la aplicación
+ * 
+ * Este archivo contiene el componente principal que estructura toda la aplicación.
+ * Incluye la navegación, las diferentes secciones y el footer.
+ * También maneja la lógica de cambio de tema (claro/oscuro) y la internacionalización.
+ */
+
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import Header from './components/header/Header';

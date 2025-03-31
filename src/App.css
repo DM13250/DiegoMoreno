@@ -1,7 +1,15 @@
+/**
+ * App.css - Estilos globales de la aplicación
+ * 
+ * Este archivo contiene los estilos globales y variables CSS que se utilizan
+ * en toda la aplicación. Define el tema claro y oscuro, así como las variables
+ * de color, tipografía y espaciado comunes.
+ */
+
 /* Variables globales para tema claro */
 :root {
   /* Variables de colores para temas */
-  --primary-color: #6e8efb;
+  --primary-color: #8A60D0;
   --primary-color-dark: #5a7be9;
   --primary-color-light: #8ca6ff;
   --primary-color-rgb: 110, 142, 251;

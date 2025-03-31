@@ -1,3 +1,13 @@
+/**
+ * Footer.css - Estilos del Pie de Página
+ * 
+ * Este archivo contiene los estilos para el componente Footer, incluyendo:
+ * - Animación de ondas
+ * - Diseño responsive
+ * - Estilos de enlaces y elementos de contacto
+ * - Efectos hover y transiciones
+ */
+
 .footer {
   position: relative;
   background-color: var(--primary-color-dark);
@@ -342,12 +352,21 @@
     text-align: center;
   }
   
-  .footer-links a:before {
-    content: none;
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
   }
   
   .footer-links a {
+    width: auto;
+    text-align: center;
     padding-left: 0;
+  }
+  
+  .footer-links a:before {
+    content: none;
   }
   
   .contact-item {
@@ -355,6 +374,10 @@
   }
   
   .social-links {
+    justify-content: center;
+  }
+
+  .footer-tagline {
     justify-content: center;
   }
 }
@@ -373,5 +396,9 @@
     flex-direction: column;
     gap: 10px;
     text-align: center;
+  }
+
+  .footer-tagline {
+    justify-content: center;
   }
 } 

@@ -1,3 +1,14 @@
+/**
+ * Projects.jsx - Componente de Proyectos
+ * 
+ * Este componente muestra una cuadrícula de proyectos con:
+ * - Filtrado por categoría
+ * - Animaciones de entrada
+ * - Diseño responsive
+ * - Carga progresiva de proyectos
+ * - Enlaces a sitios web y GitHub
+ */
+
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
