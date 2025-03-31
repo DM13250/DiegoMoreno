@@ -1,3 +1,14 @@
+/**
+ * Footer.jsx - Componente de Pie de Página
+ * 
+ * Este componente muestra el pie de página de la aplicación con:
+ * - Información de contacto
+ * - Enlaces de navegación
+ * - Enlaces a redes sociales
+ * - Animación de ondas
+ * - Diseño responsive
+ */
+
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

@@ -1,3 +1,13 @@
+/**
+ * index.js - Punto de entrada de la aplicación
+ * 
+ * Este archivo es el punto de entrada principal de la aplicación React.
+ * Configura el renderizado de la aplicación, incluyendo:
+ * - React.StrictMode para desarrollo
+ * - Configuración de i18n para internacionalización
+ * - Renderizado del componente App
+ */
+
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';

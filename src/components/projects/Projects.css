@@ -1,3 +1,14 @@
+/**
+ * Projects.css - Estilos de la Sección de Proyectos
+ * 
+ * Este archivo contiene los estilos para la sección de proyectos, incluyendo:
+ * - Diseño de cuadrícula responsive
+ * - Tarjetas de proyecto con efectos hover
+ * - Filtros y botones
+ * - Animaciones y transiciones
+ * - Diseño adaptativo para móvil y tablet
+ */
+
 .projects-section {
   padding: 8rem 0;
   background: linear-gradient(135deg, var(--bg-color) 0%, var(--bg-color-alt) 100%);
@@ -445,6 +456,9 @@
 
   .projects-grid {
     grid-template-columns: 1fr;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 1rem;
   }
 
   .project-content {
