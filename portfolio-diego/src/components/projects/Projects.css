@@ -433,16 +433,23 @@
     padding: 6rem 0;
   }
 
+  .projects-container {
+    padding: 0;
+    max-width: 100%;
+  }
+
   .section-title {
     font-size: 2.5rem;
   }
 
   .section-subtitle {
     font-size: 1.1rem;
+    padding: 0 1rem;
   }
 
   .filter-buttons {
     gap: 0.5rem;
+    padding: 0 1rem;
   }
 
   .filter-btn {
@@ -456,9 +463,15 @@
 
   .projects-grid {
     grid-template-columns: 1fr;
-    max-width: 500px;
+    gap: 1.5rem;
+    width: calc(100% - 2rem);
     margin: 0 auto;
     padding: 0 1rem;
+  }
+
+  .project-card {
+    width: 100%;
+    margin: 0;
   }
 
   .project-content {
@@ -485,16 +498,25 @@
 }
 
 @media (max-width: 480px) {
-  .section-title {
-    font-size: 2rem;
+  .projects-container {
+    padding: 0;
+  }
+
+  .section-subtitle {
+    padding: 0 0.5rem;
   }
 
   .filter-buttons {
     flex-direction: row;
     overflow-x: auto;
-    padding-bottom: 10px;
+    padding: 0 0.5rem 10px 0.5rem;
     justify-content: flex-start;
     margin-bottom: 2rem;
+  }
+
+  .projects-grid {
+    width: calc(100% - 1rem);
+    padding: 0 0.5rem;
   }
 
   .filter-btn {
