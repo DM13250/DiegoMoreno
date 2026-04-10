@@ -11,8 +11,9 @@
   publish = "build"
 
 # Reescritura SPA: cualquier ruta sirve index.html para React Router
+# EXCEPTO para archivos estáticos (assets, imágenes, etc.)
 [[redirects]]
-  from = "/*"
+  from = "!/assets/*"
   to = "/index.html"
   status = 200
 
