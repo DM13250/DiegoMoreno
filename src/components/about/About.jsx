@@ -75,7 +75,7 @@ const About = () => {
             </p>
             
             <div className="cv-download">
-              <a href="/assets/CV Diego.pdf" className="download-btn" download="CV Diego.pdf">
+              <a href="/assets/CV Diego Moreno Rodríguez Barbero.pdf" className="download-btn" download="CV Diego.pdf">
                 <FontAwesomeIcon icon={faDownload} />
                 {t('about.descargarCV')}
               </a>
