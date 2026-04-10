@@ -95,7 +95,14 @@ const Skills = () => {
                 key={index}
                 whileHover={{ scale: 1.1, y: -5 }}
               >
-                <img src={skill.icon} alt={skill.name} className="skill-icon" />
+                <img 
+                  src={skill.icon} 
+                  alt={skill.name} 
+                  className="skill-icon"
+                  loading="lazy"
+                  width="70"
+                  height="70"
+                />
                 <div className="skill-name">{skill.name}</div>
               </motion.div>
             ))}

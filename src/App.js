@@ -6,16 +6,31 @@
  * También maneja la lógica de cambio de tema (claro/oscuro) y la internacionalización.
  */
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Suspense, lazy } from 'react';
 import { useTranslation } from 'react-i18next';
 import Header from './components/header/Header';
 import Hero from './components/hero/Hero';
-import About from './components/about/About';
-import Skills from './components/skills/Skills';
-import Projects from './components/projects/Projects';
 import Footer from './components/footer/Footer';
 import './App.css';
 import './i18n/i18n';
+
+// Code-splitting: lazy load componentes grandes que no son above-the-fold
+const About = lazy(() => import('./components/about/About'));
+const Skills = lazy(() => import('./components/skills/Skills'));
+const Projects = lazy(() => import('./components/projects/Projects'));
+
+// Componente de fallback mientras se cargan los componentes
+const SectionFallback = () => (
+  <div style={{ 
+    minHeight: '500px', 
+    display: 'flex', 
+    alignItems: 'center', 
+    justifyContent: 'center',
+    opacity: 0.5
+  }}>
+    <p>Cargando...</p>
+  </div>
+);
 
 function App() {
   const { i18n } = useTranslation();
@@ -84,15 +99,21 @@ function App() {
         </div>
         
         <section id="about">
-          <About />
+          <Suspense fallback={<SectionFallback />}>
+            <About />
+          </Suspense>
         </section>
         
         <section id="skills">
-          <Skills />
+          <Suspense fallback={<SectionFallback />}>
+            <Skills />
+          </Suspense>
         </section>
         
         <section id="projects">
-          <Projects />
+          <Suspense fallback={<SectionFallback />}>
+            <Projects />
+          </Suspense>
         </section>
         
         {/* Sección de contacto eliminada */}
