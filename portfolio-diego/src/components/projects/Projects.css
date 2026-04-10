@@ -113,7 +113,8 @@
 
 .filter-btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 5px 15px var(--shadow-color);
+  box-shadow: 0 5px 15px var(--shadow-color), 0 0 15px rgba(138, 96, 208, 0.3);
+  position: relative;
 }
 
 .filter-btn:hover::before {
@@ -152,6 +153,21 @@
   position: relative;
   display: flex;
   flex-direction: column;
+}
+
+.project-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 30% 30%, rgba(138, 96, 208, 0.1), transparent 70%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+  border-radius: 20px;
+  z-index: 1;
 }
 
 .project-card.featured {
@@ -200,7 +216,11 @@
 
 .project-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15), 0 0 30px rgba(138, 96, 208, 0.2);
+}
+
+.project-card:hover::before {
+  opacity: 1;
 }
 
 .project-image {
@@ -269,7 +289,8 @@
 .project-link:hover {
   background: var(--accent-color);
   transform: translateY(-5px) rotate(8deg);
-  box-shadow: 0 8px 25px rgba(138, 96, 208, 0.4);
+  box-shadow: 0 8px 25px rgba(138, 96, 208, 0.4), 0 0 20px rgba(78, 205, 196, 0.3);
+  filter: drop-shadow(0 0 8px rgba(78, 205, 196, 0.5));
 }
 
 .project-link svg {

@@ -22,6 +22,61 @@ function App() {
   const [activeSection, setActiveSection] = useState('home');
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
+  // Custom Circle Cursor
+  useEffect(() => {
+    const cursor = document.createElement('div');
+    const cursorInner = document.createElement('div');
+    
+    cursor.className = 'cursor';
+    cursorInner.className = 'cursor-inner';
+    
+    document.body.appendChild(cursor);
+    document.body.appendChild(cursorInner);
+    
+    let mouseX = 0;
+    let mouseY = 0;
+    let cursorX = 0;
+    let cursorY = 0;
+    
+    const speed = 0.1; // Suavidad del seguimiento
+    
+    const updateCursor = () => {
+      cursorX += (mouseX - cursorX) * speed;
+      cursorY += (mouseY - cursorY) * speed;
+      
+      cursor.style.left = cursorX + 'px';
+      cursor.style.top = cursorY + 'px';
+      
+      cursorInner.style.left = mouseX + 'px';
+      cursorInner.style.top = mouseY + 'px';
+      
+      requestAnimationFrame(updateCursor);
+    };
+    
+    window.addEventListener('mousemove', (e) => {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+    });
+    
+    // Click effect
+    window.addEventListener('mousedown', () => {
+      cursor.classList.add('click');
+      cursorInner.classList.add('click');
+    });
+    
+    window.addEventListener('mouseup', () => {
+      cursor.classList.remove('click');
+      cursorInner.classList.remove('click');
+    });
+    
+    updateCursor();
+    
+    return () => {
+      cursor.remove();
+      cursorInner.remove();
+    };
+  }, []);
+
   // Aplicar el idioma preferido del usuario al cargar
   useEffect(() => {
     const storedLanguage = localStorage.getItem('preferredLanguage');
@@ -56,6 +111,15 @@ function App() {
       }, { id: sections[0], offset: Infinity });
       
       setActiveSection(current.id);
+      
+      // Scroll Indicator Progress
+      const scrollTop = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const scrolled = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+      const scrollIndicator = document.querySelector('.scroll-indicator');
+      if (scrollIndicator) {
+        scrollIndicator.style.width = scrolled + '%';
+      }
     };
     
     window.addEventListener('scroll', handleScroll);
@@ -72,6 +136,7 @@ function App() {
 
   return (
     <div className="portfolio">
+      <div className="scroll-indicator"></div>
       <Header 
         activeSection={activeSection} 
         isSidebarOpen={isSidebarOpen} 
