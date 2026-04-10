@@ -182,7 +182,7 @@ const Header = ({ activeSection, isSidebarOpen, toggleSidebar }) => {
             <a href="https://github.com/DM13250" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faGithub} />
             </a>
-            <a href="https://linkedin.com/in/dm13250" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/dmorenorb/" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faLinkedin} />
             </a>
           </div>
