@@ -16,21 +16,21 @@
   "hero": {
     "greeting": "Hello! I'm",
     "title": "Diego Moreno",
-    "subtitle": "Frontend Developer",
-    "description": "Creating elegant and functional digital experiences",
+    "subtitle": "Backend & Data Developer (Junior) at Tecnobit - Grupo Oesía",
+    "description": "Specialized in data management with SAP and Tableau. Backend application development with Django and Ruby on Rails. Transforming data into enterprise solutions.",
     "cta": "View Projects"
   },
   "about": {
     "title": "About Me",
-    "description": "Learn more about me, my experience, and my passion for web development.",
-    "parrafo1": "I am a web developer with over 5 years of experience in developing web applications and sites using technologies such as Drupal, Angular, React, and .NET.",
-    "parrafo2": "My approach is to create digital solutions that not only meet technical requirements but also provide an excellent user experience. I specialize in both frontend and backend development, with a strong emphasis on creating clean and functional interfaces.",
-    "parrafo3": "Throughout my career, I have worked with various companies and organizations, from startups to large corporations, helping them bring their ideas to life and improve their digital presence.",
+    "description": "Learn about my career as a Backend & Data Developer at Tecnobit - Grupo Oesía, specialized in data management and application development.",
+    "parrafo1": "Since June 2025, I work as a Junior Backend & Data Developer at Tecnobit - Grupo Oesía, a leading company in technological solutions and cybersecurity. During my internship, I have gained practical experience in backend development and enterprise data management, combining academic training with real responsibilities in a professional environment.",
+    "parrafo2": "My specialization centers on the data and backend development ecosystem. I work with SAP for comprehensive enterprise data management, Tableau for data visualization and analytics, Ruby on Rails for internal data management applications (developed as my Final Degree Project), and Django with Vanilla JS and Tailwind CSS for internal tools. My goal is to transform complex data into practical and efficient solutions.",
+    "parrafo3": "Beyond my work at the company, I have the privilege of representing Tecnobit at institutes and training centers, sharing experiences about Vocational Training and opportunities in the technology sector. I believe in the power of technical education and the potential of young professionals to innovate in the field of technology.",
     "datosPersonales": "Personal Information",
     "cumpleanos": "Birthday",
     "telefono": "Phone",
     "direccion": "Location",
-    "cargo": "Current Position",
+    "cargo": "Backend & Data Developer (Junior) - Tecnobit",
     "descargarCV": "Download CV"
   },
   "skills": {

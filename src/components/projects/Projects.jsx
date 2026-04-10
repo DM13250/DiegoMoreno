@@ -301,7 +301,13 @@ const Projects = () => {
               variants={projectVariants}
             >
               <div className="project-image">
-                <img src={project.image} alt={t(`projects.items.${project.key}.title`)} />
+                <img 
+                  src={project.image} 
+                  alt={t(`projects.items.${project.key}.title`)}
+                  loading="lazy"
+                  width="400"
+                  height="225"
+                />
                 {project.featured && <span className="featured-badge">{t('projects.common.featured')}</span>}
               </div>
               

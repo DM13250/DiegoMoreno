@@ -1,3 +1,10 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Disallow:
+Allow: /
+
+# Sitemap declaration
+Sitemap: https://dm13250.netlify.app/sitemap.xml
+
+# Crawl delay (be respectful with crawlers)
+Crawl-delay: 1
