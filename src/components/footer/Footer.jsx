@@ -52,14 +52,14 @@ const Footer = () => {
           <div className="footer-about">
             <div className="footer-logo">
               <h2>Diego Moreno</h2>
-              <div className="footer-tagline">
+              <p className="footer-description">
+                {t('footer.description')}
+              </p>
+            </div>
+            <div className="footer-tagline">
                 <FontAwesomeIcon icon={faCode} className="tagline-icon" />
                 <p>{t('footer.tagline')}</p>
               </div>
-            </div>
-            <p className="footer-description">
-              {t('footer.description')}
-            </p>
           </div>
           
           <div className="footer-navigation">
@@ -98,16 +98,16 @@ const Footer = () => {
                 target="_blank" 
                 rel="noopener noreferrer" 
                 aria-label="GitHub"
-                title="GitHub"
+                title="Mi GitHub"
               >
                 <FontAwesomeIcon icon={faGithub} />
               </a>
               <a 
-                href="https://www.linkedin.com/in/dm13250/" 
+                href="www.linkedin.com/in/dmorenorb" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 aria-label="LinkedIn"
-                title="LinkedIn"
+                title="Mi LinkedIn"
               >
                 <FontAwesomeIcon icon={faLinkedin} />
               </a>
