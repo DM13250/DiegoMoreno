@@ -16,14 +16,14 @@
   "hero": {
     "greeting": "¡Hola! Soy",
     "title": "Diego Moreno",
-    "subtitle": "Desarrollador Frontend",
-    "description": "Creando experiencias digitales elegantes y funcionales",
+    "subtitle": "Backend & Data Developer (Junior)",
+    "description": "Desarrollo aplicaciones, automatizaciones y soluciones de gestión de datos orientadas a negocio.",
     "cta": "Ver Proyectos"
   },
   "about": {
     "title": "Sobre Mí",
     "description": "Conoce un poco más sobre mí, mi experiencia y mi pasión por el desarrollo web.",
-    "parrafo1": "Soy un desarrollador web con más de 5 años de experiencia en el desarrollo de aplicaciones web y sitios usando tecnologías como Drupal, Angular, React y .NET.",
+    "parrafo1": "Soy desarrollador junior orientado a backend, datos y automatización, con experiencia en el desarrollo de aplicaciones internas, gestión de datos y mejora de procesos. He trabajado con SAP para la gestión de información, Tableau para la creación de paneles de control y visualización de datos, y con Ruby on Rails y Django para desarrollar herramientas internas orientadas a negocio. También he creado automatizaciones con Power Automate para optimizar tareas y flujos de trabajo.",
     "parrafo2": "Mi enfoque está en crear soluciones digitales que no solo cumplan con los requisitos técnicos, sino que también ofrezcan una excelente experiencia de usuario. Me especializo en el desarrollo frontend y backend, con un fuerte énfasis en la creación de interfaces limpias y funcionales.",
     "parrafo3": "A lo largo de mi carrera, he trabajado con diversas empresas y organizaciones, desde startups hasta grandes corporaciones, ayudándoles a materializar sus ideas y mejorar su presencia digital.",
     "datosPersonales": "Datos Personales",

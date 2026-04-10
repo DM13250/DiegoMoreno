@@ -56,10 +56,14 @@ const Footer = () => {
                 <FontAwesomeIcon icon={faCode} className="tagline-icon" />
                 <p>{t('footer.tagline')}</p>
               </div>
+              <p className="footer-description">
+                {t('footer.description')}
+              </p>
             </div>
-            <p className="footer-description">
-              {t('footer.description')}
-            </p>
+            <div className="footer-tagline">
+                <FontAwesomeIcon icon={faCode} className="tagline-icon" />
+                <p>{t('footer.tagline')}</p>
+              </div>
           </div>
           
           <div className="footer-navigation">

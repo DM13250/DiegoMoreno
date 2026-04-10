@@ -73,9 +73,6 @@ const About = () => {
             <p>
               {t('about.parrafo3')}
             </p>
-            <p>
-              {t('about.parrafo4')}
-            </p>
             
             <div className="cv-download">
               <a href="/assets/CV Diego Moreno Rodríguez Barbero.pdf" className="download-btn" download>
