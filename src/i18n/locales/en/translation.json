@@ -16,21 +16,24 @@
   "hero": {
     "greeting": "Hello! I'm",
     "title": "Diego Moreno",
-    "subtitle": "Backend & Data Developer (Junior) at Tecnobit - Grupo Oesía",
-    "description": "Specialized in data management with SAP and Tableau. Backend application development with Django and Ruby on Rails. Transforming data into enterprise solutions.",
+    "subtitle": "Data Analyst & Web Developer (Intern) at Tecnobit - Grupo Oesía",
+    "description": "Specialized in data analysis with SAP and Tableau. Web and backend application development with Django, Ruby on Rails, and Symfony. Transforming data into enterprise solutions.",
     "cta": "View Projects"
   },
   "about": {
     "title": "About Me",
-    "description": "Learn about my career as a Backend & Data Developer at Tecnobit - Grupo Oesía, specialized in data management and application development.",
-    "parrafo1": "Since June 2025, I work as a Junior Backend & Data Developer at Tecnobit - Grupo Oesía, a leading company in technological solutions and cybersecurity. During my internship, I have gained practical experience in backend development and enterprise data management, combining academic training with real responsibilities in a professional environment.",
+    "description": "Learn about my experience as a Data Analyst and Web Developer at Tecnobit - Grupo Oesía, specialized in enterprise data analysis and web application development.",
+    "parrafo1": "Since June 2025, I work as a Data Analyst & Web Developer at Tecnobit - Grupo Oesía, a company dedicated to web solutions and technology. During my internship, I have gained practical experience in enterprise data analysis with SAP, data visualization with Tableau, backend development with Django and Ruby on Rails, and web development with Symfony and Vanilla JS, combining academic training with real responsibilities in a professional environment. Previously, I have worked at companies such as Deltantet Sistemas Informáticos, Globalcaja, and Royal Comunicación, where I gained experience in web development, data analysis, and enterprise technology solutions.",
     "parrafo2": "My specialization centers on the data and backend development ecosystem. I work with SAP for comprehensive enterprise data management, Tableau for data visualization and analytics, Ruby on Rails for internal data management applications (developed as my Final Degree Project), and Django with Vanilla JS and Tailwind CSS for internal tools. My goal is to transform complex data into practical and efficient solutions.",
     "parrafo3": "Beyond my work at the company, I have the privilege of representing Tecnobit at institutes and training centers, sharing experiences about Vocational Training and opportunities in the technology sector. I believe in the power of technical education and the potential of young professionals to innovate in the field of technology.",
     "datosPersonales": "Personal Information",
     "cumpleanos": "Birthday",
+    "fechaCumpleanos": "July 15, 1999",
+    "email": "dmr13250@gmail.com",
+    "ubicacion": "Daimiel, Ciudad Real, Spain",
     "telefono": "Phone",
     "direccion": "Location",
-    "cargo": "Backend & Data Developer (Junior) - Tecnobit",
+    "cargo": "Data Analyst & Web Developer (Intern) - Tecnobit",
     "descargarCV": "Download CV"
   },
   "skills": {
@@ -47,10 +50,86 @@
     "description": "These are some of the most notable projects I've worked on. Each represents different challenges and technical solutions I've implemented.",
     "viewProject": "View Project",
     "viewCode": "View Code",
-    "all": "All",
-    "drupal": "Drupal",
-    "react": "React",
-    "dotnet": ".NET"
+    "filters": {
+      "all": "All",
+      "drupal": "Drupal",
+      "wordpress": "WordPress",
+      "angular": "Angular",
+      "react": "React",
+      "csharp": "C#",
+      "unity": "Unity",
+      "wpf": "WPF",
+      "maui": "MAUI",
+      "featured": "Featured"
+    },
+    "items": {
+      "abacid": {
+        "title": "Abacid",
+        "description": "The ABACID website provides information about laboratory tests focused on nutrition, health and wellness, genetic studies, and specialized consultations. Users can purchase tests such as molecular allergy diagnosis, food intolerance analysis, and non-invasive prenatal screening, with the option to perform them at home or in partner centers. Additionally, the portal provides details about each test, instructions for their performance, and online access to results. It also includes informative resources and contact information to resolve doubts or request advice."
+      },
+      "apocalipsisMoscas": {
+        "title": "VR Game in Unity",
+        "description": "Face the fly invasion and test your reflexes while using different weapons to eliminate them. But be careful, you must not hit the wasps! Survive the challenge and prove your skills in this fun and frantic game."
+      },
+      "benidorm": {
+        "title": "Benidorm City Council",
+        "description": "Multisite platform with news, political information, municipal areas, and featured events."
+      },
+      "consum": {
+        "title": "Consum",
+        "description": "Development of a new website providing information about products, stores, coupon queries, and online shopping.",
+        "detailedDescription": "I participated in the development of Consum's new website, implementing key functionalities such as store finder, coupon management, and product catalog. I mainly worked on the frontend and internal API integration."
+      },
+      "daimiel": {
+        "title": "Daimiel City Council",
+        "description": "The official portal of Daimiel City Council provides updated information about municipal services, local news, and cultural events. It includes access to online procedures, the Electronic Headquarters, and the Transparency Portal, as well as highlighting tourism in the region, such as Las Tablas de Daimiel National Park."
+      },
+      "edificaciones": {
+        "title": "Edificaciones Caballero",
+        "description": "Real estate website for buying, selling, and renting properties, with dynamic content and image galleries.",
+        "detailedDescription": "I developed a custom website for a real estate company, including a property filtering system, advanced contact forms, and an admin panel to easily manage properties."
+      },
+      "frozen": {
+        "title": "3D Game in Unity",
+        "description": "3D platform game developed with Unity",
+        "detailedDescription": "Immerse yourself in a world inspired by the magic and aesthetics of Frozen, exploring icy scenarios full of challenges, platforms, and unique adventures."
+      },
+      "garciaBaquero": {
+        "title": "García Baquero",
+        "description": "The official website of García Baquero presents this renowned Spanish company dedicated to cheese production since 1962. It offers information about its history, commitment to quality and animal welfare, and a wide range of products, including traditional cheeses, specialties, and sheep and goat options. Additionally, it provides recipes, news, and access to their online store to purchase their products directly."
+      },
+      "gicoop": {
+        "title": "GICOOP",
+        "description": "Desktop application for cooperative management",
+        "detailedDescription": "Development of a desktop application for comprehensive cooperative management, including member management, accounting, and report generation with Crystal Reports."
+      },
+      "hm": {
+        "title": "HM Hospitals",
+        "description": "Website with health news, coronavirus updates, research, awards, etc.",
+        "detailedDescription": "I worked on implementing the content management system for HM Hospitals, with customized sections for medical news, research, and awards. Includes an advanced search system and doctor profiles."
+      },
+      "mejorAppT": {
+        "title": "MejorAppT",
+        "description": "Android application developed with .NET MAUI in collaboration with the Faculty of Psychology at the University of Valencia. The application is designed to conduct eating behavior tests and, based on the results, age, and other factors, generates personalized recommendations adapted to each user.",
+        "detailedDescription": "My contribution consisted of implementing data storage, ensuring that information was saved both in the device's local memory and in the cloud on Firebase. I designed a system that automatically synchronizes local data with the cloud as soon as the device detects an internet connection, guaranteeing data integrity and availability."
+      },
+      "portfolio": {
+        "title": "Personal Portfolio",
+        "description": "Personal website to showcase my experience and projects.",
+        "detailedDescription": "Development of my personal portfolio using React and the latest frontend technologies. Includes fluid animations, dark/light mode, internationalization, and responsive design for all devices."
+      },
+      "proyectoMia": {
+        "title": "Proyecto Mia",
+        "description": "Chat with IA that explains the DAM module.",
+        "detailedDescription": "Development of a desktop application using WPF, with a MVVM pattern, modern design, smooth animations, and a clean, maintainable architecture. Also adding Llama3.2 (IA model), Vosk API (voice recognition) for the avatar to speak, and System.Speech (voice synthesis) for the avatar to speak."
+      }
+    },
+    "common": {
+      "featured": "Featured",
+      "loadMore": "Load more",
+      "viewWebsite": "View website",
+      "viewGithub": "View on GitHub"
+    }
   },
   "contact": {
     "title": "Contact",
@@ -76,6 +155,9 @@
   "footer": {
     "contacto": "Contact",
     "derechos": "All rights reserved",
-    "hecho": "Made with"
+    "hecho": "Made with",
+    "description": "Data Analyst & Web Developer | SAP · Tableau · Django · Ruby on Rails · Symfony",
+    "navigation": "Navigation",
+    "tagline": "Transforming data into enterprise solutions"
   }
 } 

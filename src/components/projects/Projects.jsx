@@ -7,6 +7,7 @@
  * - Diseño responsive
  * - Carga progresiva de proyectos
  * - Enlaces a sitios web y GitHub
+ * - Imágenes optimizadas con lazy loading
  */
 
 import React, { useState, useEffect } from 'react';
@@ -15,6 +16,7 @@ import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGlobe, faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import useMetadata from '../../hooks/useMetadata';
 import './Projects.css';
 
 // Importación de imágenes
@@ -51,8 +53,18 @@ const projectImages = {
 
 const Projects = () => {
   const { t } = useTranslation();
+  const { setMetadata } = useMetadata();
   const [filter, setFilter] = useState('all');
   const [displayCount, setDisplayCount] = useState(6);
+
+  // Actualizar metadatos cuando la sección se carga
+  useEffect(() => {
+    setMetadata({
+      title: `${t('projects.title')} | Diego Moreno`,
+      description: t('projects.description'),
+      url: 'https://dm13250.netlify.app/#projects'
+    });
+  }, [t, setMetadata]);
   
   // Datos de proyectos
   const projects = [
@@ -305,6 +317,7 @@ const Projects = () => {
                   src={project.image} 
                   alt={t(`projects.items.${project.key}.title`)}
                   loading="lazy"
+                  decoding="async"
                   width="400"
                   height="225"
                 />

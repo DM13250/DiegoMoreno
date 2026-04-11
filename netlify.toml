@@ -10,7 +10,28 @@
   command = "npm run build"
   publish = "build"
 
-# Reescritura SPA: cualquier ruta sirve index.html para React Router
+# Excepciones: NO reescribir archivos estáticos SEO-críticos
+[[redirects]]
+  from = "/robots.txt"
+  to = "/robots.txt"
+  status = 200
+
+[[redirects]]
+  from = "/sitemap.xml"
+  to = "/sitemap.xml"
+  status = 200
+
+[[redirects]]
+  from = "/manifest.json"
+  to = "/manifest.json"
+  status = 200
+
+[[redirects]]
+  from = "/favicon.ico"
+  to = "/favicon.ico"
+  status = 200
+
+# Reescritura SPA: cualquier otra ruta sirve index.html para React Router
 [[redirects]]
   from = "/*"
   to = "/index.html"

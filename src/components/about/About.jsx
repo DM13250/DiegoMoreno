@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -9,10 +9,21 @@ import {
   faMapMarkerAlt, 
   faBriefcase 
 } from '@fortawesome/free-solid-svg-icons';
+import useMetadata from '../../hooks/useMetadata';
 import './About.css';
 
 const About = () => {
   const { t } = useTranslation();
+  const { setMetadata } = useMetadata();
+
+  // Actualizar metadatos cuando la sección se carga
+  useEffect(() => {
+    setMetadata({
+      title: `${t('about.title')} | Diego Moreno`,
+      description: t('about.description'),
+      url: 'https://dm13250.netlify.app/#about-me'
+    });
+  }, [t, setMetadata]);
 
   // Animaciones
   const containerVariants = {
@@ -105,8 +116,7 @@ const About = () => {
               </li>
               <li>
                 <FontAwesomeIcon icon={faBriefcase} />
-                <span className="info-title">{t('about.cargo')}:</span>
-                <span>{t('about.puesto')}</span>
+                <span className="info-title">{t('about.cargo')}</span>
               </li>
             </ul>
           </motion.div>

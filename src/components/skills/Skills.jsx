@@ -1,5 +1,7 @@
 import React, { useEffect, useRef } from 'react';
+import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
+import useMetadata from '../../hooks/useMetadata';
 import './Skills.css';
 
 // Importar las imágenes
@@ -22,6 +24,17 @@ import javaScriptIcon from '../../assets/img/technologies/javascript.png';
 
 const Skills = () => {
   const carouselRef = useRef(null);
+  const { t } = useTranslation();
+  const { setMetadata } = useMetadata();
+
+  // Actualizar metadatos cuando la sección se carga
+  useEffect(() => {
+    setMetadata({
+      title: `${t('skills.title')} | Diego Moreno`,
+      description: `${t('skills.title')} - Aprende sobre mis conocimientos técnicos en SAP, Tableau, Django, Ruby on Rails y más.`,
+      url: 'https://dm13250.netlify.app/#skills'
+    });
+  }, [t, setMetadata]);
   
   const skillsData = [
     { name: 'React', icon: reactIcon },
@@ -100,6 +113,7 @@ const Skills = () => {
                   alt={skill.name} 
                   className="skill-icon"
                   loading="lazy"
+                  decoding="async"
                   width="70"
                   height="70"
                 />

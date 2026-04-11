@@ -16,21 +16,24 @@
   "hero": {
     "greeting": "¡Hola! Soy",
     "title": "Diego Moreno",
-    "subtitle": "Backend & Data Developer (Junior) en Tecnobit - Grupo Oesía",
-    "description": "Especializado en gestión de datos con SAP y Tableau. Desarrollo de aplicaciones backend con Django y Ruby on Rails. Transformando datos en soluciones empresariales.",
+    "subtitle": "Analista de Datos & Desarrollador Web (Junior) en Tecnobit - Grupo Oesía",
+    "description": "Especializado en análisis de datos con SAP y Tableau. Desarrollo de aplicaciones web y backend con Django, Ruby on Rails y Symfony. Transformando datos en soluciones empresariales.",
     "cta": "Ver Proyectos"
   },
   "about": {
     "title": "Sobre Mí",
-    "description": "Conoce mi carrera como Backend & Data Developer en Tecnobit - Grupo Oesía, especializado en gestión de datos y desarrollo de aplicaciones.",
-    "parrafo1": "Desde junio de 2025, trabajo como Backend & Data Developer Junior en Tecnobit - Grupo Oesía, una empresa líder en soluciones tecnológicas y ciberseguridad. Durante mi beca, he adquirido experiencia práctica en desarrollo backend y gestión empresarial de datos, combinando formación académica con responsabilidades reales en un entorno profesional.",
+    "description": "Conoce mi experiencia como Analista de Datos y Desarrollador Web en Tecnobit - Grupo Oesía, especializado en análisis de datos empresariales y desarrollo de aplicaciones web.",
+    "parrafo1": "Desde junio de 2025, trabajo como Analista de Datos & Desarrollador Web en Tecnobit - Grupo Oesía, una empresa dedicada a soluciones web y tecnología. Durante mi beca, he adquirido experiencia práctica en análisis de datos empresariales con SAP, visualización con Tableau, desarrollo backend con Django y Ruby on Rails, y desarrollo web con Symfony y Vanilla JS, combinando formación académica con responsabilidades reales en un entorno profesional. Anteriormente, he trabajado en empresas como Deltantet Sistemas Informáticos, Globalcaja y Royal Comunicación, donde adquirí experiencia en desarrollo web, análisis de datos y soluciones tecnológicas empresariales.",
     "parrafo2": "Mi especialización se centra en el ecosistema de datos y desarrollo backend. Trabajo con SAP para la gestión integral de datos empresariales, Tableau para la visualización y análisis de datos, Ruby on Rails para aplicaciones internas de gestión de datos (desarrollado como Trabajo de Fin de Grado), y Django con Vanilla JS y Tailwind CSS para herramientas internas. Mi objetivo es transformar datos complejos en soluciones prácticas y eficientes.",
     "parrafo3": "Además de mi trabajo en la empresa, tengo el privilegio de representar a Tecnobit en institutos y centros formativos, compartiendo experiencias sobre Formación Profesional y las oportunidades en el sector tecnológico. Creo en el poder de la educación técnica y en el potencial de los jóvenes profesionales para innovar en el campo de la tecnología.",
     "datosPersonales": "Datos Personales",
     "cumpleanos": "Cumpleaños",
+    "fechaCumpleanos": "15 de Julio de 1999",
+    "email": "dmr13250@gmail.com",
+    "ubicacion": "Daimiel, Ciudad Real, España",
     "telefono": "Teléfono",
     "direccion": "Dirección",
-    "cargo": "Backend & Data Developer (Junior) - Tecnobit",
+    "cargo": "Analista de Datos & Desarrollador Web (Junior) - Tecnobit",
     "descargarCV": "Descargar CV"
   },
   "skills": {
@@ -47,10 +50,82 @@
     "description": "Estos son algunos de los proyectos más destacados en los que he trabajado. Cada uno representa diferentes desafíos y soluciones técnicas implementadas.",
     "viewProject": "Ver Proyecto",
     "viewCode": "Ver Código",
-    "all": "Todos",
-    "drupal": "Drupal",
-    "react": "React",
-    "dotnet": ".NET"
+    "filters": {
+      "all": "Todos",
+      "drupal": "Drupal",
+      "wordpress": "WordPress",
+      "angular": "Angular",
+      "react": "React",
+      "csharp": "C#",
+      "unity": "Unity",
+      "wpf": "WPF",
+      "maui": "MAUI",
+      "featured": "Destacado"
+    },
+    "items": {
+      "abacid": {
+        "title": "Abacid",
+        "description": "El sitio web de ABACID, ofrece información sobre pruebas de laboratorio enfocadas en nutrición, salud y bienestar, estudios genéticos y consultas especializadas. Los usuarios pueden adquirir pruebas como el diagnóstico molecular de alergias, análisis de intolerancias alimentarias y cribados prenatales no invasivos, con la opción de realizarlas desde casa o en centros colaboradores. Además, el portal proporciona detalles sobre cada prueba, instrucciones para su realización y acceso a resultados en línea. También se incluyen recursos informativos y datos de contacto para resolver dudas o solicitar asesoramiento."
+      },
+      "apocalipsisMoscas": {
+        "title": "Juego VR en Unity",
+        "description": "Enfréntate a la invasión de moscas y pon a prueba tus reflejos mientras usas diferentes armas para acabar con ellas. Pero cuidado, ¡no debes golpear a las avispas! Sobrevive al desafío y demuestra tu habilidad en este divertido y frenético juego."
+      },
+      "benidorm": {
+        "title": "Ayuntamiento de Benidorm",
+        "description": "Portal multisite oficial de Benidorm, que ofrece noticias actualizadas, información sobre política local, servicios municipales y una agenda destacada de eventos y actividades."
+      },
+      "consum": {
+        "title": "Consum",
+        "description": "El sitio web oficial de Consum, ofrece información detallada sobre la cooperativa valenciana de distribución alimentaria. Los usuarios pueden acceder a la tienda en línea para realizar compras, localizar supermercados cercanos y explorar oportunidades laborales en la sección \"Trabaja con nosotros\". Además, el portal proporciona recursos como recetas, consejos de salud y bienestar, y detalles sobre iniciativas de responsabilidad social corporativa. También se facilita el acceso al área privada para socios-clientes, donde pueden gestionar sus ventajas y promociones."
+      },
+      "daimiel": {
+        "title": "Ayuntamiento de Daimiel",
+        "description": "El portal oficial del Ayuntamiento de Daimiel ofrece información actualizada sobre servicios municipales, noticias locales y eventos culturales. Incluye acceso a trámites en línea, la Sede Electrónica y el Portal de Transparencia, además de destacar el turismo en la región, como el Parque Nacional de Las Tablas de Daimiel."
+      },
+      "edificaciones": {
+        "title": "Edificaciones Caballero",
+        "description": "El sitio web de Edificaciones Caballero, presenta a esta empresa dedicada a la construcción y promoción inmobiliaria en Ciudad Real. Ofrece información sobre promociones de viviendas, servicios al cliente como financiación y servicio postventa, y destaca su compromiso con la calidad, el diseño y la accesibilidad en la creación de hogares confortables."
+      },
+      "frozen": {
+        "title": "Juego 3D en Unity",
+        "description": "Juego de plataformas 3D desarrollado con Unity",
+        "detailedDescription": "Sumérgete en un mundo inspirado en la magia y la estética de Frozen, explorando escenarios helados llenos de desafíos, plataformas y aventuras únicas."
+      },
+      "garciaBaquero": {
+        "title": "García Baquero",
+        "description": "El sitio web oficial de García Baquero, presenta a esta reconocida empresa española dedicada a la producción de quesos desde 1962. Ofrece información sobre su historia, compromiso con la calidad y bienestar animal, y una amplia gama de productos, incluyendo quesos tradicionales, especialidades y opciones de oveja y cabra. Además, proporciona recetas, noticias y acceso a su tienda en línea para adquirir sus productos directamente."
+      },
+      "gicoop": {
+        "title": "GICOOP",
+        "description": "Gicoop es una aplicación de escritorio diseñada para la gestión integral de cooperativas agroalimentarias. Facilita el control de procesos administrativos, productivos y comerciales, optimizando la operativa diaria de las cooperativas. Su enfoque está en ofrecer una herramienta práctica y eficiente para gestionar datos, reportes y la trazabilidad de los productos."
+      },
+      "hm": {
+        "title": "Fundación HM",
+        "description": "El sitio web de la Fundación de Investigación HM Hospitales ofrece información sobre sus programas de investigación en áreas como oncología, cardiología y neurociencias, así como detalles sobre ensayos clínicos y colaboraciones institucionales. Además, proporciona acceso a recursos como memorias anuales y datos de contacto para investigadores y colaboradores."
+      },
+      "mejorAppT": {
+        "title": "MejorAppT",
+        "description": "Aplicación Android desarrollada con .NET MAUI en colaboración con la Facultad de Psicología de la Universidad de Valencia. La aplicación está orientada a la realización de tests sobre conducta alimentaria y, a partir de los resultados obtenidos, la edad y otros factores relevantes, genera recomendaciones personalizadas adaptadas a cada usuario.",
+        "detailedDescription": "Mi contribución se centró en la implementación del sistema de almacenamiento de datos, garantizando que la información quedara registrada tanto en la memoria local del dispositivo como en la nube mediante Firebase. Además, diseñé un mecanismo de sincronización automática que actualiza los datos locales con la nube en cuanto el dispositivo detecta conexión a internet, asegurando la integridad, disponibilidad y consistencia de la información."
+      },
+      "portfolio": {
+        "title": "Portfolio Personal",
+        "description": "Sitio web personal para mostrar mi experiencia y proyectos.",
+        "detailedDescription": "Desarrollo de mi portfolio personal utilizando React y las últimas tecnologías frontend. Incluye animaciones fluidas, modo oscuro/claro, internacionalización y diseño adaptable a todos los dispositivos."
+      },
+      "proyectoMia": {
+        "title": "Proyecto Mia",
+        "description": "Chat con IA diseñado para explicar contenidos del ciclo de formación profesional de DAM.",
+        "detailedDescription": "Desarrollo de una aplicación de escritorio en WPF, basada en el patrón MVVM, con un diseño moderno, animaciones fluidas y una arquitectura limpia y mantenible. Además, incorpora Llama 3.2 como modelo de IA, Vosk API para el reconocimiento de voz y System.Speech para la síntesis de voz, permitiendo una interacción más natural con el avatar."
+      }
+    },
+    "common": {
+      "featured": "Destacado",
+      "loadMore": "Ver más",
+      "viewWebsite": "Ver sitio web",
+      "viewGithub": "Ver en GitHub"
+    }
   },
   "contact": {
     "title": "Contacto",
@@ -76,6 +151,9 @@
   "footer": {
     "contacto": "Contacto",
     "derechos": "Todos los derechos reservados",
-    "hecho": "Hecho con"
+    "hecho": "Hecho con",
+    "description": "Analista de Datos & Desarrollador Web | SAP · Tableau · Django · Ruby on Rails · Symfony",
+    "navigation": "Navegación",
+    "tagline": "Transformando datos en soluciones empresariales"
   }
 } 

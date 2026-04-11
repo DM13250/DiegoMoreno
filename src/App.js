@@ -11,6 +11,8 @@ import { useTranslation } from 'react-i18next';
 import Header from './components/header/Header';
 import Hero from './components/hero/Hero';
 import Footer from './components/footer/Footer';
+import MetaTags from './components/common/MetaTags';
+import { PersonSchema } from './components/common/StructuredData';
 import './App.css';
 import './i18n/i18n';
 
@@ -151,6 +153,13 @@ function App() {
 
   return (
     <div className="portfolio">
+      <MetaTags 
+        title="Diego Moreno | Data Analyst & Web Developer"
+        description="Data Analyst & Web Developer (Intern) at Tecnobit - Grupo Oesía. Specialized in data analysis, SAP, Tableau, Django and Ruby on Rails development."
+        image="https://dm13250.netlify.app/logo192.png"
+        url="https://dm13250.netlify.app/"
+      />
+      <PersonSchema />
       <div className="scroll-indicator"></div>
       <Header 
         activeSection={activeSection} 
