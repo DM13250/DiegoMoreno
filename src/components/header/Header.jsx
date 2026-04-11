@@ -164,6 +164,8 @@ const Header = ({ activeSection, isSidebarOpen, toggleSidebar }) => {
           <button 
             className="theme-toggle" 
             onClick={toggleTheme}
+            aria-label={isDarkTheme ? "Cambiar a modo claro" : "Cambiar a modo oscuro"}
+            title={isDarkTheme ? "Modo Claro" : "Modo Oscuro"}
           >
             {isDarkTheme ? (
               <>
@@ -179,10 +181,22 @@ const Header = ({ activeSection, isSidebarOpen, toggleSidebar }) => {
           </button>
           
           <div className="social-links">
-            <a href="https://github.com/DM13250" target="_blank" rel="noopener noreferrer">
+            <a 
+              href="https://github.com/DM13250" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              aria-label="Visita mi perfil de GitHub"
+              title="GitHub"
+            >
               <FontAwesomeIcon icon={faGithub} />
             </a>
-            <a href="https://www.linkedin.com/in/dmorenorb/" target="_blank" rel="noopener noreferrer">
+            <a 
+              href="https://www.linkedin.com/in/dmorenorb/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              aria-label="Visita mi perfil de LinkedIn"
+              title="LinkedIn"
+            >
               <FontAwesomeIcon icon={faLinkedin} />
             </a>
           </div>

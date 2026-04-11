@@ -339,13 +339,27 @@ const Projects = () => {
                 
                 <div className="project-links">
                   {project.liveUrl && (
-                    <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="project-link" title={t('projects.common.viewWebsite')}>
+                    <a 
+                      href={project.liveUrl} 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="project-link" 
+                      title={t('projects.common.viewWebsite')}
+                      aria-label={`${t(`projects.items.${project.key}.title`)} - ${t('projects.common.viewWebsite')}`}
+                    >
                       <FontAwesomeIcon icon={faGlobe} />
                     </a>
                   )}
                   
                   {project.githubUrl && (
-                    <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="project-link" title={t('projects.common.viewGithub')}>
+                    <a 
+                      href={project.githubUrl} 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="project-link" 
+                      title={t('projects.common.viewGithub')}
+                      aria-label={`${t(`projects.items.${project.key}.title`)} - ${t('projects.common.viewGithub')}`}
+                    >
                       <FontAwesomeIcon icon={faGithub} />
                     </a>
                   )}
