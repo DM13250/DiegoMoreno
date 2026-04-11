@@ -360,39 +360,6 @@
   color: var(--primary-color);
 }
 
-/* Enlaces a redes sociales */
-.social-links {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  margin-top: 0.2rem;
-}
-
-.social-links a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 36px;
-  height: 36px;
-  color: #333;
-  font-size: 1.2rem;
-  border-radius: 50%;
-  transition: all 0.3s ease;
-  background-color: #e8e8e8;
-}
-
-.dark-theme .social-links a {
-  color: #fff;
-  background-color: #444;
-}
-
-.social-links a:hover {
-  color: #fff;
-  background: linear-gradient(to right, var(--primary-color), var(--accent-color));
-  transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(138, 96, 208, 0.3);
-}
-
 /* Estilos responsivos */
 @media (max-width: 768px) {
   .site-header {

@@ -6,17 +6,17 @@
  * - Animaciones de entrada
  * - Diseño responsive
  * - Carga progresiva de proyectos
- * - Enlaces a sitios web y GitHub
+ * - Modal para ver detalles del proyecto
  * - Imágenes optimizadas con lazy loading
  */
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGlobe, faChevronDown } from '@fortawesome/free-solid-svg-icons';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import useMetadata from '../../hooks/useMetadata';
+import ProjectModal from './ProjectModal';
 import './Projects.css';
 
 // Importación de imágenes
@@ -56,6 +56,7 @@ const Projects = () => {
   const { setMetadata } = useMetadata();
   const [filter, setFilter] = useState('all');
   const [displayCount, setDisplayCount] = useState(6);
+  const [selectedProjectId, setSelectedProjectId] = useState(null);
 
   // Actualizar metadatos cuando la sección se carga
   useEffect(() => {
@@ -210,6 +211,16 @@ const Projects = () => {
     setDisplayCount(prev => prev + 3);
   };
 
+  // Manejar apertura del modal
+  const handleOpenModal = useCallback((project) => {
+    setSelectedProjectId(project.id);
+  }, []);
+
+  // Manejar cierre del modal
+  const handleCloseModal = useCallback(() => {
+    setSelectedProjectId(null);
+  }, []);
+
   // Reset display count when filter changes
   useEffect(() => {
     setDisplayCount(6);
@@ -307,65 +318,44 @@ const Projects = () => {
           viewport={{ once: true, amount: 0.1 }}
         >
           {displayedProjects.map(project => (
-            <motion.div
+            <div
               className="project-card" 
               key={project.id}
-              variants={projectVariants}
+              onClick={() => handleOpenModal(project)}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                  e.preventDefault();
+                  handleOpenModal(project);
+                }
+              }}
+              role="button"
+              tabIndex={0}
+              style={{ cursor: 'pointer' }}
+              aria-label={`Ver detalles de ${t(`projects.items.${project.key}.title`)}`}
             >
-              <div className="project-image">
-                <img 
-                  src={project.image} 
-                  alt={t(`projects.items.${project.key}.title`)}
-                  loading="lazy"
-                  decoding="async"
-                  width="400"
-                  height="225"
-                />
-                {project.featured && <span className="featured-badge">{t('projects.common.featured')}</span>}
-              </div>
-              
-              <div className="project-content">
-                <h3 className="project-title">{t(`projects.items.${project.key}.title`)}</h3>
-                <p className="project-description">{t(`projects.items.${project.key}.description`)}</p>
-                {t(`projects.items.${project.key}.detailedDescription`, { returnObjects: true }) !== `projects.items.${project.key}.detailedDescription` && (
-                  <p className="project-detailed-description">{t(`projects.items.${project.key}.detailedDescription`)}</p>
-                )}
-                
-                <div className="project-tech">
-                  {project.technologies.map((tech, index) => (
-                    <span key={index} className="tech-tag">{tech}</span>
-                  ))}
+              <motion.div
+                variants={projectVariants}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.1 }}
+              >
+                <div className="project-image">
+                  <img 
+                    src={project.image} 
+                    alt={t(`projects.items.${project.key}.title`)}
+                    loading="lazy"
+                    decoding="async"
+                    width="400"
+                    height="225"
+                  />
+                  {project.featured && <span className="featured-badge">{t('projects.common.featured')}</span>}
                 </div>
                 
-                <div className="project-links">
-                  {project.liveUrl && (
-                    <a 
-                      href={project.liveUrl} 
-                      target="_blank" 
-                      rel="noopener noreferrer" 
-                      className="project-link" 
-                      title={t('projects.common.viewWebsite')}
-                      aria-label={`${t(`projects.items.${project.key}.title`)} - ${t('projects.common.viewWebsite')}`}
-                    >
-                      <FontAwesomeIcon icon={faGlobe} />
-                    </a>
-                  )}
-                  
-                  {project.githubUrl && (
-                    <a 
-                      href={project.githubUrl} 
-                      target="_blank" 
-                      rel="noopener noreferrer" 
-                      className="project-link" 
-                      title={t('projects.common.viewGithub')}
-                      aria-label={`${t(`projects.items.${project.key}.title`)} - ${t('projects.common.viewGithub')}`}
-                    >
-                      <FontAwesomeIcon icon={faGithub} />
-                    </a>
-                  )}
+                <div className="project-card-footer">
+                  <h3 className="project-card-title">{t(`projects.items.${project.key}.title`)}</h3>
                 </div>
-              </div>
-            </motion.div>
+              </motion.div>
+            </div>
           ))}
         </motion.div>
 
@@ -376,23 +366,26 @@ const Projects = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5 }}
           >
-            <div 
+            <button 
               className="load-more-btn" 
               onClick={handleLoadMore}
-              role="button"
-              tabIndex={0}
-              onKeyDown={(e) => {
-                if (e.key === 'Enter') {
-                  handleLoadMore();
-                }
-              }}
+              aria-label={t('projects.common.loadMore')}
+              type="button"
             >
               {t('projects.common.loadMore')}
               <FontAwesomeIcon icon={faChevronDown} className="load-more-icon" />
-            </div>
+            </button>
           </motion.div>
         )}
       </div>
+
+      {/* Modal para ver detalles del proyecto */}
+      <ProjectModal
+        isOpen={selectedProjectId !== null}
+        project={selectedProjectId ? projects.find(p => p.id === selectedProjectId) : null}
+        onClose={handleCloseModal}
+        t={t}
+      />
     </section>
   );
 };

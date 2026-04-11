@@ -240,6 +240,45 @@ a:hover {
   color: var(--primary-color-light);
 }
 
+/* Excluir el underline animado de los iconos de redes sociales */
+.social-links a::after {
+  display: none;
+}
+
+/* Estilos globales para enlaces de redes sociales */
+.social-links {
+  display: flex;
+  gap: 1.5rem;
+  text-decoration: none;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  background-color: #839CEF;
+  color: #fff;
+  text-decoration: none;
+}
+
+.dark-theme .social-links a {
+  color: #fff;
+  background-color: #444;
+}
+
+.social-links a:hover {
+  color: #fff;
+  background: linear-gradient(to right, var(--primary-color), var(--accent-color));
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(138, 96, 208, 0.3);
+  text-decoration: none;
+}
+
 img {
   max-width: 100%;
   height: auto;

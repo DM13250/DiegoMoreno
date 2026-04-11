@@ -128,7 +128,9 @@
       "featured": "Featured",
       "loadMore": "Load more",
       "viewWebsite": "View website",
-      "viewGithub": "View on GitHub"
+      "viewGithub": "View on GitHub",
+      "technologies": "Technologies",
+      "links": "Links"
     }
   },
   "contact": {
